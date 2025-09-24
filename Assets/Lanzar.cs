@@ -1,0 +1,30 @@
+using UnityEngine;
+
+public class Lanzar : MonoBehaviour
+{
+    public GameObject[] objetos;
+    public float fuerza;
+    public GameObject jugador;
+
+
+
+    private void Start()
+    {
+
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if ( other.gameObject == jugador)
+        {
+            Debug.Log("Objeto ya lanzado");
+            int randomIndex = Random.Range(0, objetos.Length);
+            GameObject objetoSeleccionado = objetos[randomIndex];
+            Rigidbody rb = objetoSeleccionado.GetComponent<Rigidbody>();
+            objetoSeleccionado.transform.LookAt(jugador.transform);
+            Vector3 direction = objetoSeleccionado.transform.forward;
+            rb.AddForce(direction * fuerza);
+            
+        }
+    }
+
+}
