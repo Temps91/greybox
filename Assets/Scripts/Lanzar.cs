@@ -5,8 +5,9 @@ public class Lanzar : MonoBehaviour
     public GameObject[] objetos;
     public float fuerza;
     public GameObject jugador;
-    public AudioClip sonidoCaida;
-    private GameObject objetoSeleccionado;
+    public GameObject objetoSeleccionado;
+    
+
     
 
 
@@ -32,10 +33,9 @@ public class Lanzar : MonoBehaviour
             
         }
 
-        if (other.gameObject == objetoSeleccionado)
-        {
-            AudioSource.PlayClipAtPoint(sonidoCaida, objetoSeleccionado.transform.position);
-        }
+
+
+
 
         
     }
