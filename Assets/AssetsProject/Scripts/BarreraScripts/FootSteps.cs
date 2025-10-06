@@ -39,9 +39,5 @@ public class Footsteps : MonoBehaviour
                 tiempoRestante = tiempoEntrePasos;
             }
         }
-        else
-        {
-            tiempoRestante = 0f;
-        }
     }
 }

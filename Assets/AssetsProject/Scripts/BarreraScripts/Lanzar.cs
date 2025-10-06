@@ -5,39 +5,40 @@ public class Lanzar : MonoBehaviour
     public GameObject[] objetos;
     public float fuerza;
     public GameObject jugador;
-    public GameObject objetoSeleccionado;
-    
+    [HideInInspector]public GameObject objetoSeleccionado;
+    public AudioManager audioManager;
+    public GameManager gameManager;
 
-    
 
-
-    private void Start()
-    {
-
-    }
     public void OnTriggerEnter(Collider other)
     {
-        if ( other.gameObject == jugador)
+        float probabiliad = gameManager.timer;
+        if (probabiliad >= 3 && probabiliad <= 4)
         {
-            Debug.Log("Objeto ya lanzado");
-            int randomIndex = Random.Range(0, objetos.Length);
-            objetoSeleccionado = objetos[randomIndex];
-            Rigidbody rb = objetoSeleccionado.GetComponent<Rigidbody>();
-            objetoSeleccionado.transform.LookAt(jugador.transform);
-            Vector3 direction = objetoSeleccionado.transform.forward;
-            rb.AddForce(direction * fuerza);
-            objetoSeleccionado.GetComponent<Rigidbody>().isKinematic = false;
-            objetoSeleccionado.GetComponent <Rigidbody>().useGravity = true;
+            if (other.gameObject == jugador)
+            {
+                Debug.Log("Objeto ya lanzado");
+                int randomIndex = Random.Range(0, objetos.Length);
+                objetoSeleccionado = objetos[randomIndex];
+                Rigidbody rb = objetoSeleccionado.GetComponent<Rigidbody>();
+                objetoSeleccionado.transform.LookAt(jugador.transform);
+                Vector3 direction = objetoSeleccionado.transform.forward;
+                rb.AddForce(direction * fuerza, ForceMode.Impulse);
+                objetoSeleccionado.GetComponent<Rigidbody>().isKinematic = false;
+                objetoSeleccionado.GetComponent<Rigidbody>().useGravity = true;
+
+                var detector = objetoSeleccionado.GetComponent<DeteccionCaida>();
+                if (detector != null)
+                {
+                    detector.audioManager = audioManager;
+                }
 
 
-            
+            }
         }
 
-
-
-
-
-        
     }
+
+
 
 }
