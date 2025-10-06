@@ -3,17 +3,19 @@ using UnityEngine;
 public class DeteccionCaida : MonoBehaviour
 {
     public GameObject suelo;
-    [HideInInspector] public AudioManager audioManager;
+    [HideInInspector] public AudioManager audioManagerDeteccionCaida;
 
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject == suelo)
         {
-            if (audioManager != null)
+            if (audioManagerDeteccionCaida != null)
             {
-                audioManager.CaidaSound(transform.position);
+                audioManagerDeteccionCaida.CaidaSound(transform.position);
             }
         }
+
+        
     }
 
 }

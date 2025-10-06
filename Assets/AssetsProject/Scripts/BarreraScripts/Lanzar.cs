@@ -30,7 +30,7 @@ public class Lanzar : MonoBehaviour
                 var detector = objetoSeleccionado.GetComponent<DeteccionCaida>();
                 if (detector != null)
                 {
-                    detector.audioManager = audioManager;
+                    detector.audioManagerDeteccionCaida = audioManager;
                 }
 
 
