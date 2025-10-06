@@ -2,35 +2,23 @@ using UnityEngine;
 
 public class PlayerVision : MonoBehaviour
 {
-    public float distanceRay = 10f;
+    public float rayDistance = 10f;
+    public LayerMask layer;
 
-    public GameObject[] creatures; // mejor nombre plural
-
-    void Update()
+    private void Update()
     {
-        Ray ray = new Ray(transform.position, transform.forward);
+        Vector3 origin = transform.position;
+        Vector3 direction = transform.forward;
         RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, distanceRay))
+        if (Physics.Raycast(origin, direction, out hit, rayDistance, layer))
         {
-            foreach (GameObject c in creatures)
+            Criature criatura = hit.collider.GetComponent<Criature>();
+            if (criatura != null)
             {
-                if (hit.collider.gameObject == c)
-                {
-                    Debug.Log("Toco " + c.name);
-
-                    Criature criatureScript = c.GetComponent<Criature>();
-                    if (criatureScript != null)
-                    {
-                        criatureScript.ActivarMovimiento();
-                    }
-
-                    break; // ya activamos la criatura, salimos del foreach
-                }
+                criatura.ActivarCriatura(); 
             }
         }
-
-        // Debug para ver el rayo en Scene
-        Debug.DrawRay(transform.position, transform.forward * distanceRay, Color.red);
+        Debug.DrawLine(origin, direction, Color.red);
     }
+
 }
