@@ -221,6 +221,10 @@ PrefabInstance:
       propertyPath: aire
       value: 
       objectReference: {fileID: 868249818}
+    - target: {fileID: 3103530879157645487, guid: 6fa93dac25f7253448d10df75c81d2c2, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 229282143}
     - target: {fileID: 6543588485297897866, guid: 6fa93dac25f7253448d10df75c81d2c2, type: 3}
       propertyPath: m_Name
       value: bicho (1)
@@ -1664,6 +1668,10 @@ PrefabInstance:
       propertyPath: aire
       value: 
       objectReference: {fileID: 868249818}
+    - target: {fileID: 3103530879157645487, guid: 6fa93dac25f7253448d10df75c81d2c2, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 229282143}
     - target: {fileID: 6543588485297897866, guid: 6fa93dac25f7253448d10df75c81d2c2, type: 3}
       propertyPath: m_Name
       value: bicho
