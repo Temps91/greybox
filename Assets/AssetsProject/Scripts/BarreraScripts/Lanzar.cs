@@ -23,7 +23,7 @@ public class Lanzar : MonoBehaviour
                 Rigidbody rb = objetoSeleccionado.GetComponent<Rigidbody>();
                 objetoSeleccionado.transform.LookAt(jugador.transform);
                 Vector3 direction = objetoSeleccionado.transform.forward;
-                rb.AddForce(direction * fuerza, ForceMode.Impulse);
+                rb.AddForce(direction * fuerza, ForceMode.Acceleration);
                 objetoSeleccionado.GetComponent<Rigidbody>().isKinematic = false;
                 objetoSeleccionado.GetComponent<Rigidbody>().useGravity = true;
 

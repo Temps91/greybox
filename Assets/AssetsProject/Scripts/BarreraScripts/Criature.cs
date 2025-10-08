@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Criature : MonoBehaviour
@@ -7,21 +8,30 @@ public class Criature : MonoBehaviour
     public float velocidad;
     [HideInInspector] public AudioManager audioManager;
     private bool criaturaActivada;
-    public float distanceMax;
-
+    public GameObject destino;
+    private Rigidbody rb;
+    private bool criaturaon;
 
     private void Start()
     {
         criaturaActivada = false;
+        rb = prefabCriatura.GetComponent<Rigidbody>();
+        if (rb != null) return;
+        {
+            rb = prefabCriatura.AddComponent<Rigidbody>();
+
+            rb.isKinematic = true;
+        }
     }
     private void FixedUpdate()
     {
         if (criaturaActivada)
         {
-            prefabCriatura.SetActive(true);
-            prefabCriatura.transform.LookAt(player.transform.position);
-            prefabCriatura.transform.Translate(Vector3.forward * velocidad * Time.deltaTime, Space.World);
-            var bichoCreado = prefabCriatura.GetComponent<BichoDetector>(); ;
+
+            Vector3 direccionCriatura = (destino.transform.position - prefabCriatura.transform.position).normalized;
+            rb.MovePosition(rb.position + direccionCriatura * velocidad * Time.fixedDeltaTime);
+
+            var bichoCreado = prefabCriatura.GetComponent<BichoDetector>();
             if (bichoCreado != null)
             {
                 bichoCreado.audioManagerBichoDetector = audioManager;
@@ -33,9 +43,11 @@ public class Criature : MonoBehaviour
         }
     }
 
+
     public void ActivarCriatura()
     {
         criaturaActivada = true;
+
 
     }
 
