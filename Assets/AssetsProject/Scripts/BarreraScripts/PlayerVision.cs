@@ -12,9 +12,10 @@ public class PlayerVision : MonoBehaviour
         Vector3 origin = transform.position;
         Vector3 direction = transform.forward;
         RaycastHit hit;
-        if (probabilidad >= 4.5f && probabilidad <= 5)
+
+        if (Physics.Raycast(origin, direction, out hit, rayDistance, layer))
         {
-            if (Physics.Raycast(origin, direction, out hit, rayDistance, layer))
+            if (probabilidad >= 4.5f && probabilidad <= 5)
             {
                 Criature criatura = hit.collider.GetComponent<Criature>();
                 if (criatura != null)
@@ -24,6 +25,7 @@ public class PlayerVision : MonoBehaviour
                 }
             }
         }
+        
 
         
         Debug.DrawLine(origin, direction, Color.red);

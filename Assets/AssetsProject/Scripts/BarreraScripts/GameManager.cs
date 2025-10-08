@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         Contador();
+        Debug.Log("Tiempo es de: " + timer);
     }
     public void Contador()
     {

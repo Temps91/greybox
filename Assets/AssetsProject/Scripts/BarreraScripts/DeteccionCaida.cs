@@ -4,6 +4,7 @@ public class DeteccionCaida : MonoBehaviour
 {
     public GameObject suelo;
     [HideInInspector] public AudioManager audioManagerDeteccionCaida;
+    public GameObject player;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -14,6 +15,11 @@ public class DeteccionCaida : MonoBehaviour
                 audioManagerDeteccionCaida.CaidaSound(transform.position);
             }
         }
+        if (collision.gameObject == player)
+        {
+            audioManagerDeteccionCaida.CaidaSound(transform.position);
+        }
+       
 
         
     }

@@ -12,9 +12,6 @@ public class Lanzar : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        float probabiliad = gameManager.timer;
-        if (probabiliad >= 3 && probabiliad <= 4)
-        {
             if (other.gameObject == jugador)
             {
                 Debug.Log("Objeto ya lanzado");
@@ -35,7 +32,7 @@ public class Lanzar : MonoBehaviour
 
 
             }
-        }
+
 
     }
 
