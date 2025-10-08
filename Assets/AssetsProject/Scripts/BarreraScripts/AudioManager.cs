@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
     public void CaidaSound(Vector3 posicion)
     {
         AudioSource.PlayClipAtPoint(caida, posicion);
+        Debug.Log("Sonando caida");
     }
     public void BichoSound(Vector3 posicion)
     {

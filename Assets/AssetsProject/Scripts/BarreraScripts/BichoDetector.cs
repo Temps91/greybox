@@ -2,19 +2,32 @@ using UnityEngine;
 
 public class BichoDetector : MonoBehaviour
 {
-    [HideInInspector] public AudioManager audioManagerBichoDetector;
+    public AudioManager audioManagerBichoDetector;
     public GameObject aire;
+    public GameObject destino;
+    public GameObject player;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject == aire)
+        if (other.gameObject == aire)
         {
-            if (audioManagerBichoDetector != null)
-            {
-                audioManagerBichoDetector.BichoSound(transform.position);
-            }
+            Debug.Log("Se detecto aire");
+            audioManagerBichoDetector.BichoSound(transform.position);
+            Debug.Log("Sonido activado");
+        }
+        else if (other.gameObject == player)
+        {
+            this.gameObject.SetActive(false);
+
+        }
+        else if (other.gameObject == destino)
+        {
+
+            this.gameObject.SetActive(false) ;
+
         }
     }
+
 
 
 }
