@@ -19,9 +19,10 @@ public class Lanzar : MonoBehaviour
                 objetoSeleccionado = objetos[randomIndex];
                 Rigidbody rb = objetoSeleccionado.GetComponent<Rigidbody>();
                 objetoSeleccionado.transform.LookAt(jugador.transform);
-                Vector3 direction = objetoSeleccionado.transform.forward;
-                rb.AddForce(direction * fuerza, ForceMode.Acceleration);
-                objetoSeleccionado.GetComponent<Rigidbody>().isKinematic = false;
+            objetoSeleccionado.GetComponent<Rigidbody>().isKinematic = false;
+            Vector3 direction = objetoSeleccionado.transform.forward;
+                rb.AddForce(direction * fuerza, ForceMode.Impulse);
+
                 objetoSeleccionado.GetComponent<Rigidbody>().useGravity = true;
 
                 var detector = objetoSeleccionado.GetComponent<DeteccionCaida>();

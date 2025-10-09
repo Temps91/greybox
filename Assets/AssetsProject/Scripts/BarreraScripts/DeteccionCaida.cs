@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 
 public class DeteccionCaida : MonoBehaviour
@@ -5,6 +6,7 @@ public class DeteccionCaida : MonoBehaviour
     public GameObject suelo;
     [HideInInspector] public AudioManager audioManagerDeteccionCaida;
     public GameObject player;
+    public GameObject aire;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -18,6 +20,10 @@ public class DeteccionCaida : MonoBehaviour
         if (collision.gameObject == player)
         {
             audioManagerDeteccionCaida.CaidaSound(transform.position);
+        }
+        if (collision.gameObject == aire)
+        {
+            Physics.IgnoreCollision(aire.gameObject, collision.gameObject);
         }
        
 
