@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerVision : MonoBehaviour
 {
     public float rayDistance = 10f;
     public LayerMask layer;
     public GameManager gameManager;
+    public int vida = 3;
 
     private void Update()
     {
@@ -29,6 +31,26 @@ public class PlayerVision : MonoBehaviour
 
         
         Debug.DrawLine(origin, direction, Color.red);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.gameObject.CompareTag("Enemigo"))
+        {
+            QuitarVida();
+        }
+    }
+
+    private void QuitarVida()
+    {
+        vida--;
+        Debug.Log("Golpe recibido. Vida restante: " + vida);
+
+        if (vida <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
 }

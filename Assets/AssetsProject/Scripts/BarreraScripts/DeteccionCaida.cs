@@ -21,10 +21,6 @@ public class DeteccionCaida : MonoBehaviour
         {
             audioManagerDeteccionCaida.CaidaSound(transform.position);
         }
-        if (collision.gameObject == aire)
-        {
-            Physics.IgnoreCollision(aire.gameObject, collision.gameObject);
-        }
        
 
         
