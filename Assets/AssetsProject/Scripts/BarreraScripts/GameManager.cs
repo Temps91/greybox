@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class GameManager : MonoBehaviour
         {
             timer = 0;
         }
+    }
+
+    public void ReinicioScene()
+    {
+        SceneManager.LoadScene("greybox");
     }
 
 }

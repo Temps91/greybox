@@ -11,6 +11,7 @@ public class Cauldron : MonoBehaviour
     public ParticleSystem vfx;
 
     public DemonsManager demonsManager;
+    private GameManager gameManager;
 
     private void Start()
     {
@@ -39,6 +40,7 @@ public class Cauldron : MonoBehaviour
                     else
                     {
                         Debug.Log("Ya hay un organo");
+                        gameManager.ReinicioScene();
                         //Reinicia Todo
                     }
                     break;
@@ -54,6 +56,7 @@ public class Cauldron : MonoBehaviour
                         else
                         {
                             Debug.Log("Ya no cabo");
+                            gameManager.ReinicioScene();
                             //Reinicia Todo
                         }
                         
@@ -74,8 +77,9 @@ public class Cauldron : MonoBehaviour
                     else
                     {
                        Debug.Log("Ya hay una vela");
+                            gameManager.ReinicioScene();
                             //Reinicia Todo
-                    }
+                        }
 
 
 
