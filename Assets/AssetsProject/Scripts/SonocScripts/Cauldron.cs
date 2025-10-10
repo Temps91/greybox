@@ -5,6 +5,7 @@ public class Cauldron : MonoBehaviour
 {
     public Queue organs;
     public Queue candles;
+    public Queue genericObjects;
 
     public ParticleSystem fire;
     public ParticleSystem vfx;
@@ -15,6 +16,8 @@ public class Cauldron : MonoBehaviour
     {
         organs = new Queue();
         candles = new Queue();
+        genericObjects = new Queue();
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,7 +44,19 @@ public class Cauldron : MonoBehaviour
                     break;
                 case enumTypeItem.objectGeneric:
                 {
-                        demonsManager.CheckItem(otherItem.thisItem);
+                        if (organs.Count <= 4)
+                        {
+                            Debug.Log("Ahi va un item nuevo");
+                            genericObjects.Enqueue(otherItem.thisItem);
+
+                            demonsManager.CheckItem(otherItem.thisItem);
+                        }
+                        else
+                        {
+                            Debug.Log("Ya no cabo");
+                            //Reinicia Todo
+                        }
+                        
                 }
                 break;
             

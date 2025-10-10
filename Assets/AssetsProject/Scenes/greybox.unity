@@ -130,10 +130,10 @@ GameObject:
   - component: {fileID: 2672969}
   - component: {fileID: 2672968}
   - component: {fileID: 2672967}
-  - component: {fileID: 2672966}
   - component: {fileID: 2672965}
   - component: {fileID: 2672964}
   - component: {fileID: 2672970}
+  - component: {fileID: 2672971}
   m_Layer: 0
   m_Name: Capsule (12)
   m_TagString: Untagged
@@ -295,29 +295,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2672966
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2672963}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2672967
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -384,7 +361,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.314, z: 0.96699995}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -402,6 +379,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 322f99d597abcb644ab4f9cc6e2cb6cc, type: 2}
+--- !u!65 &2672971
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2672963}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3817581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -482,10 +480,10 @@ GameObject:
   - component: {fileID: 5802165}
   - component: {fileID: 5802170}
   - component: {fileID: 5802169}
-  - component: {fileID: 5802168}
   - component: {fileID: 5802167}
   - component: {fileID: 5802166}
   - component: {fileID: 5802171}
+  - component: {fileID: 5802172}
   m_Layer: 0
   m_Name: Capsule (19)
   m_TagString: Untagged
@@ -502,8 +500,8 @@ Transform:
   m_GameObject: {fileID: 5802164}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.071, y: 1.1900002, z: 6.816}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalPosition: {x: -11.071, y: 1.164, z: 6.816}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -662,29 +660,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &5802168
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5802164}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &5802169
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -754,6 +729,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: be2d209e2d21c504daad28dac87031c1, type: 2}
+--- !u!65 &5802172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802164}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0.0000009536743, z: 0}
 --- !u!1 &14553123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,10 +1683,10 @@ GameObject:
   - component: {fileID: 118818448}
   - component: {fileID: 118818447}
   - component: {fileID: 118818446}
-  - component: {fileID: 118818445}
   - component: {fileID: 118818444}
   - component: {fileID: 118818443}
   - component: {fileID: 118818449}
+  - component: {fileID: 118818450}
   m_Layer: 0
   m_Name: Capsule (6)
   m_TagString: Untagged
@@ -1852,29 +1848,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &118818445
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118818442}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &118818446
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1941,7 +1914,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.73, y: 0.56, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -1959,6 +1932,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 529393aa98a2c394f87a5b2d35029190, type: 2}
+--- !u!65 &118818450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118818442}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &119831823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2293,10 +2287,10 @@ GameObject:
   - component: {fileID: 146457567}
   - component: {fileID: 146457566}
   - component: {fileID: 146457565}
-  - component: {fileID: 146457564}
   - component: {fileID: 146457563}
   - component: {fileID: 146457562}
   - component: {fileID: 146457568}
+  - component: {fileID: 146457569}
   m_Layer: 0
   m_Name: Capsule (17)
   m_TagString: Untagged
@@ -2458,29 +2452,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &146457564
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146457561}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &146457565
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2547,7 +2518,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.317, z: 2.963}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -2565,6 +2536,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 14b56534d376cbf45a47ac46d1899217, type: 2}
+--- !u!65 &146457569
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146457561}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &169183354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3608,10 +3600,10 @@ GameObject:
   - component: {fileID: 209262007}
   - component: {fileID: 209262006}
   - component: {fileID: 209262005}
-  - component: {fileID: 209262004}
   - component: {fileID: 209262003}
   - component: {fileID: 209262008}
   - component: {fileID: 209262002}
+  - component: {fileID: 209262009}
   m_Layer: 0
   m_Name: Capsule (30)
   m_TagString: Untagged
@@ -3773,29 +3765,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &209262004
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209262001}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &209262005
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3862,7 +3831,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15.83, y: 1.152, z: 6.96}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -3880,6 +3849,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: dc2f9d3394e05674fa5c91cde93fa638, type: 2}
+--- !u!65 &209262009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209262001}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &215554855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6292867904067638093, guid: b6648dcbfc22977488e9522459852b56, type: 3}
@@ -4398,10 +4388,10 @@ GameObject:
   - component: {fileID: 255736668}
   - component: {fileID: 255736673}
   - component: {fileID: 255736672}
-  - component: {fileID: 255736671}
   - component: {fileID: 255736670}
   - component: {fileID: 255736669}
   - component: {fileID: 255736674}
+  - component: {fileID: 255736675}
   m_Layer: 0
   m_Name: Capsule (22)
   m_TagString: Untagged
@@ -4419,7 +4409,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.919, y: 1.1560001, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -4578,29 +4568,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &255736671
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255736667}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &255736672
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4670,6 +4637,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 17922a0aea3cc5b448812f46854a4b85, type: 2}
+--- !u!65 &255736675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255736667}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &256551031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5001,10 +4989,10 @@ GameObject:
   - component: {fileID: 283500314}
   - component: {fileID: 283500319}
   - component: {fileID: 283500318}
-  - component: {fileID: 283500317}
   - component: {fileID: 283500316}
   - component: {fileID: 283500315}
   - component: {fileID: 283500320}
+  - component: {fileID: 283500321}
   m_Layer: 0
   m_Name: Capsule (34)
   m_TagString: Untagged
@@ -5022,7 +5010,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.722, y: -0.01, z: 6.759}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -5181,29 +5169,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &283500317
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283500313}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &283500318
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5273,6 +5238,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 44fdf5004a88d5147abb76f9bd81ca43, type: 2}
+--- !u!65 &283500321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283500313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &300668398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,10 +6004,10 @@ GameObject:
   - component: {fileID: 354730309}
   - component: {fileID: 354730314}
   - component: {fileID: 354730313}
-  - component: {fileID: 354730312}
   - component: {fileID: 354730311}
   - component: {fileID: 354730310}
   - component: {fileID: 354730315}
+  - component: {fileID: 354730316}
   m_Layer: 0
   m_Name: Capsule (20)
   m_TagString: Untagged
@@ -6038,8 +6024,8 @@ Transform:
   m_GameObject: {fileID: 354730308}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.331, y: 1.1900002, z: 6.783}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalPosition: {x: -10.331, y: 1.167, z: 6.783}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -6198,29 +6184,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &354730312
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354730308}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &354730313
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6290,6 +6253,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 8bab3ff06f75276479af1681c90194b6, type: 2}
+--- !u!65 &354730316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354730308}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &367032306
 GameObject:
   m_ObjectHideFlags: 0
@@ -6612,10 +6596,10 @@ GameObject:
   - component: {fileID: 383289157}
   - component: {fileID: 383289156}
   - component: {fileID: 383289155}
-  - component: {fileID: 383289154}
   - component: {fileID: 383289153}
   - component: {fileID: 383289152}
   - component: {fileID: 383289158}
+  - component: {fileID: 383289159}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: Untagged
@@ -6777,29 +6761,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &383289154
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383289151}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &383289155
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6866,7 +6827,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.45, y: 0.594, z: 6.759}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -6884,6 +6845,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 0aea4b4664826a84d9f0d2f6c0fbf860, type: 2}
+--- !u!65 &383289159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383289151}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &387305137
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,10 +7539,10 @@ GameObject:
   - component: {fileID: 517585336}
   - component: {fileID: 517585335}
   - component: {fileID: 517585334}
-  - component: {fileID: 517585333}
   - component: {fileID: 517585332}
   - component: {fileID: 517585331}
   - component: {fileID: 517585337}
+  - component: {fileID: 517585338}
   m_Layer: 0
   m_Name: Capsule (31)
   m_TagString: Untagged
@@ -7722,29 +7704,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &517585333
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517585330}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &517585334
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7811,7 +7770,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.892, y: 0.538, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -7829,6 +7788,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 313ec6736de681848a1c89cee61377c3, type: 2}
+--- !u!65 &517585338
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517585330}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &519169105
 GameObject:
   m_ObjectHideFlags: 0
@@ -9096,6 +9076,87 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 44fdf5004a88d5147abb76f9bd81ca43, type: 2}
     - {fileID: 11400000, guid: 065f1b4694194ca45b5d7463505f9da7, type: 2}
     collectedItems: 0
+  - demonName: Stolas
+    itemsToSummon:
+    - {fileID: 11400000, guid: 313ec6736de681848a1c89cee61377c3, type: 2}
+    - {fileID: 11400000, guid: 14b56534d376cbf45a47ac46d1899217, type: 2}
+    - {fileID: 11400000, guid: 0520e3722e099bd48959659758c952fa, type: 2}
+    - {fileID: 11400000, guid: 6f75360ffb3ffeb46a0091baa3dcecde, type: 2}
+    - {fileID: 11400000, guid: 065f1b4694194ca45b5d7463505f9da7, type: 2}
+    - {fileID: 11400000, guid: 4c3ee47e56130d54ab308ba09d1c0b08, type: 2}
+    collectedItems: 0
+  - demonName: Asmodeus
+    itemsToSummon:
+    - {fileID: 11400000, guid: dc2f9d3394e05674fa5c91cde93fa638, type: 2}
+    - {fileID: 11400000, guid: a6a060b7176e43142b7f3bfdec1572cd, type: 2}
+    - {fileID: 11400000, guid: 8bab3ff06f75276479af1681c90194b6, type: 2}
+    - {fileID: 11400000, guid: d8e6870ea05ac064eb0e20e8d71fcf52, type: 2}
+    - {fileID: 11400000, guid: 0aea4b4664826a84d9f0d2f6c0fbf860, type: 2}
+    - {fileID: 11400000, guid: 6f75360ffb3ffeb46a0091baa3dcecde, type: 2}
+    collectedItems: 0
+  - demonName: Astaroth
+    itemsToSummon:
+    - {fileID: 11400000, guid: d1ffdc83db2be3a4ca0c4209172a2090, type: 2}
+    - {fileID: 11400000, guid: 8bceabe83ed389e4c8d8405d52ff6824, type: 2}
+    - {fileID: 11400000, guid: 8bab3ff06f75276479af1681c90194b6, type: 2}
+    - {fileID: 11400000, guid: 44fdf5004a88d5147abb76f9bd81ca43, type: 2}
+    - {fileID: 11400000, guid: 6f75360ffb3ffeb46a0091baa3dcecde, type: 2}
+    - {fileID: 11400000, guid: cd64f71aa97dd234096046acb887da29, type: 2}
+    collectedItems: 0
+  - demonName: Belial
+    itemsToSummon:
+    - {fileID: 11400000, guid: 1227d62caf7290d409e7718afd3335b9, type: 2}
+    - {fileID: 11400000, guid: 28acf62067f18b8439c949fd3e0a389e, type: 2}
+    - {fileID: 11400000, guid: 17922a0aea3cc5b448812f46854a4b85, type: 2}
+    - {fileID: 11400000, guid: be2d209e2d21c504daad28dac87031c1, type: 2}
+    - {fileID: 11400000, guid: 98740ff08a93be141b71dac72be79d3a, type: 2}
+    - {fileID: 11400000, guid: 6f75360ffb3ffeb46a0091baa3dcecde, type: 2}
+    collectedItems: 0
+  - demonName: Beelzebub
+    itemsToSummon:
+    - {fileID: 11400000, guid: 1227d62caf7290d409e7718afd3335b9, type: 2}
+    - {fileID: 11400000, guid: ca753e72a86f0414c86e0c1795b6b842, type: 2}
+    - {fileID: 11400000, guid: a208320c474a5854d902bd63e21cf2b2, type: 2}
+    - {fileID: 11400000, guid: e2a612d19808c0b4ea88df2bcf626b2e, type: 2}
+    - {fileID: 11400000, guid: 1007cd3919b197043905919dfe70bff0, type: 2}
+    - {fileID: 11400000, guid: 6f75360ffb3ffeb46a0091baa3dcecde, type: 2}
+    collectedItems: 0
+  - demonName: Lilith
+    itemsToSummon:
+    - {fileID: 11400000, guid: 8962cd656fc452b4596a02ef7416858f, type: 2}
+    - {fileID: 11400000, guid: b034a0ffd1d8414439caeaf1dbd17522, type: 2}
+    - {fileID: 11400000, guid: 0520e3722e099bd48959659758c952fa, type: 2}
+    - {fileID: 11400000, guid: 065f1b4694194ca45b5d7463505f9da7, type: 2}
+    - {fileID: 11400000, guid: cd64f71aa97dd234096046acb887da29, type: 2}
+    - {fileID: 11400000, guid: 9769916df64459f4e9a15d6f22ff652f, type: 2}
+    collectedItems: 0
+  - demonName: Azazel
+    itemsToSummon:
+    - {fileID: 11400000, guid: 1227d62caf7290d409e7718afd3335b9, type: 2}
+    - {fileID: 11400000, guid: 71b7246a6b8cc694cbf82e7b0d674f5f, type: 2}
+    - {fileID: 11400000, guid: 4c3ee47e56130d54ab308ba09d1c0b08, type: 2}
+    - {fileID: 11400000, guid: cb8c7cb565e2fc1489a9d8b3ea64fc8f, type: 2}
+    - {fileID: 11400000, guid: 17922a0aea3cc5b448812f46854a4b85, type: 2}
+    - {fileID: 11400000, guid: 98740ff08a93be141b71dac72be79d3a, type: 2}
+    collectedItems: 0
+  - demonName: Mammon
+    itemsToSummon:
+    - {fileID: 11400000, guid: d1ffdc83db2be3a4ca0c4209172a2090, type: 2}
+    - {fileID: 11400000, guid: a6a060b7176e43142b7f3bfdec1572cd, type: 2}
+    - {fileID: 11400000, guid: d8e6870ea05ac064eb0e20e8d71fcf52, type: 2}
+    - {fileID: 11400000, guid: be2d209e2d21c504daad28dac87031c1, type: 2}
+    - {fileID: 11400000, guid: 9769916df64459f4e9a15d6f22ff652f, type: 2}
+    - {fileID: 11400000, guid: 6f75360ffb3ffeb46a0091baa3dcecde, type: 2}
+    collectedItems: 0
+  - demonName: Leviatan
+    itemsToSummon:
+    - {fileID: 11400000, guid: 313ec6736de681848a1c89cee61377c3, type: 2}
+    - {fileID: 11400000, guid: e2c5f5e1c8a35dc4e8721b8cc687be86, type: 2}
+    - {fileID: 11400000, guid: 529393aa98a2c394f87a5b2d35029190, type: 2}
+    - {fileID: 11400000, guid: f76db14a33123244b847a363d4dc7fe4, type: 2}
+    - {fileID: 11400000, guid: 1007cd3919b197043905919dfe70bff0, type: 2}
+    - {fileID: 11400000, guid: 4f548567322ade44cb9769a572647f47, type: 2}
+    collectedItems: 0
 --- !u!1 &667675182
 GameObject:
   m_ObjectHideFlags: 0
@@ -9218,10 +9279,10 @@ GameObject:
   - component: {fileID: 668468606}
   - component: {fileID: 668468611}
   - component: {fileID: 668468610}
-  - component: {fileID: 668468609}
   - component: {fileID: 668468608}
   - component: {fileID: 668468607}
   - component: {fileID: 668468612}
+  - component: {fileID: 668468613}
   m_Layer: 0
   m_Name: Capsule (37)
   m_TagString: Untagged
@@ -9239,7 +9300,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.92, y: -0.044999957, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -9398,29 +9459,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &668468609
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668468605}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &668468610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9490,6 +9528,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 4f548567322ade44cb9769a572647f47, type: 2}
+--- !u!65 &668468613
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668468605}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &679665642
 GameObject:
   m_ObjectHideFlags: 0
@@ -10240,10 +10299,10 @@ GameObject:
   - component: {fileID: 716208703}
   - component: {fileID: 716208702}
   - component: {fileID: 716208701}
-  - component: {fileID: 716208700}
   - component: {fileID: 716208699}
   - component: {fileID: 716208698}
   - component: {fileID: 716208704}
+  - component: {fileID: 716208705}
   m_Layer: 0
   m_Name: Capsule (4)
   m_TagString: Untagged
@@ -10405,29 +10464,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &716208700
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716208697}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &716208701
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10494,7 +10530,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.48, y: 0.594, z: 6.783}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -10512,6 +10548,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 98740ff08a93be141b71dac72be79d3a, type: 2}
+--- !u!65 &716208705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716208697}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &738931606
 GameObject:
   m_ObjectHideFlags: 0
@@ -12706,10 +12763,10 @@ GameObject:
   - component: {fileID: 946919233}
   - component: {fileID: 946919232}
   - component: {fileID: 946919231}
-  - component: {fileID: 946919230}
   - component: {fileID: 946919229}
   - component: {fileID: 946919228}
   - component: {fileID: 946919234}
+  - component: {fileID: 946919235}
   m_Layer: 0
   m_Name: Capsule (29)
   m_TagString: Untagged
@@ -12871,29 +12928,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &946919230
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 946919227}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &946919231
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12960,7 +12994,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -16.908, y: 1.146, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -12978,6 +13012,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 30f78fbd892565940accff2cac5d0190, type: 2}
+--- !u!65 &946919235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946919227}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &955525210
 GameObject:
   m_ObjectHideFlags: 0
@@ -12989,10 +13044,10 @@ GameObject:
   - component: {fileID: 955525211}
   - component: {fileID: 955525217}
   - component: {fileID: 955525216}
-  - component: {fileID: 955525215}
   - component: {fileID: 955525214}
   - component: {fileID: 955525213}
   - component: {fileID: 955525212}
+  - component: {fileID: 955525218}
   m_Layer: 0
   m_Name: Capsule (41)
   m_TagString: Untagged
@@ -13010,7 +13065,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.794, z: 1.315}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -13182,29 +13237,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &955525215
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955525210}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &955525216
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13261,6 +13293,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955525210}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &955525218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955525210}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &960349856
 GameObject:
   m_ObjectHideFlags: 0
@@ -14313,10 +14366,10 @@ GameObject:
   - component: {fileID: 1019032476}
   - component: {fileID: 1019032475}
   - component: {fileID: 1019032474}
-  - component: {fileID: 1019032473}
   - component: {fileID: 1019032472}
   - component: {fileID: 1019032471}
   - component: {fileID: 1019032477}
+  - component: {fileID: 1019032478}
   m_Layer: 0
   m_Name: Capsule (5)
   m_TagString: Untagged
@@ -14478,29 +14531,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1019032473
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019032470}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1019032474
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14567,7 +14597,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.69, y: 1.15, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -14585,6 +14615,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: d8e6870ea05ac064eb0e20e8d71fcf52, type: 2}
+--- !u!65 &1019032478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019032470}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1020320825
 GameObject:
   m_ObjectHideFlags: 0
@@ -17047,10 +17098,10 @@ GameObject:
   - component: {fileID: 1248835208}
   - component: {fileID: 1248835207}
   - component: {fileID: 1248835206}
-  - component: {fileID: 1248835205}
   - component: {fileID: 1248835204}
   - component: {fileID: 1248835203}
   - component: {fileID: 1248835209}
+  - component: {fileID: 1248835210}
   m_Layer: 0
   m_Name: Capsule (18)
   m_TagString: Untagged
@@ -17212,29 +17263,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1248835205
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248835202}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1248835206
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17301,7 +17329,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.313, z: 2.2989998}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -17319,6 +17347,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: a6a060b7176e43142b7f3bfdec1572cd, type: 2}
+--- !u!65 &1248835210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248835202}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &1261246404
 GameObject:
   m_ObjectHideFlags: 0
@@ -17641,10 +17690,10 @@ GameObject:
   - component: {fileID: 1292373047}
   - component: {fileID: 1292373052}
   - component: {fileID: 1292373051}
-  - component: {fileID: 1292373050}
   - component: {fileID: 1292373049}
   - component: {fileID: 1292373048}
   - component: {fileID: 1292373053}
+  - component: {fileID: 1292373054}
   m_Layer: 0
   m_Name: Capsule (36)
   m_TagString: Untagged
@@ -17662,7 +17711,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10.331, y: -0.00999999, z: 6.783}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -17821,29 +17870,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1292373050
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292373046}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1292373051
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17913,6 +17939,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 0520e3722e099bd48959659758c952fa, type: 2}
+--- !u!65 &1292373054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292373046}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1321161850
 GameObject:
   m_ObjectHideFlags: 0
@@ -18191,10 +18238,10 @@ GameObject:
   - component: {fileID: 1343478848}
   - component: {fileID: 1343478854}
   - component: {fileID: 1343478853}
-  - component: {fileID: 1343478852}
   - component: {fileID: 1343478851}
   - component: {fileID: 1343478850}
   - component: {fileID: 1343478849}
+  - component: {fileID: 1343478855}
   m_Layer: 0
   m_Name: Capsule (42)
   m_TagString: Untagged
@@ -18212,7 +18259,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.794, z: 2.64}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -18384,29 +18431,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1343478852
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343478847}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1343478853
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18463,6 +18487,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343478847}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1343478855
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343478847}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1347941119
 GameObject:
   m_ObjectHideFlags: 0
@@ -18474,10 +18519,10 @@ GameObject:
   - component: {fileID: 1347941125}
   - component: {fileID: 1347941124}
   - component: {fileID: 1347941123}
-  - component: {fileID: 1347941122}
   - component: {fileID: 1347941121}
   - component: {fileID: 1347941120}
   - component: {fileID: 1347941126}
+  - component: {fileID: 1347941127}
   m_Layer: 0
   m_Name: Capsule (32)
   m_TagString: Untagged
@@ -18639,29 +18684,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1347941122
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347941119}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1347941123
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18728,7 +18750,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.905, y: 1.146, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -18746,6 +18768,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: d1ffdc83db2be3a4ca0c4209172a2090, type: 2}
+--- !u!65 &1347941127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347941119}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1352460599
 GameObject:
   m_ObjectHideFlags: 0
@@ -18757,10 +18800,10 @@ GameObject:
   - component: {fileID: 1352460600}
   - component: {fileID: 1352460605}
   - component: {fileID: 1352460604}
-  - component: {fileID: 1352460603}
   - component: {fileID: 1352460602}
   - component: {fileID: 1352460601}
   - component: {fileID: 1352460606}
+  - component: {fileID: 1352460607}
   m_Layer: 0
   m_Name: Capsule (39)
   m_TagString: Untagged
@@ -18778,7 +18821,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.75, y: -0.04099989, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -18937,29 +18980,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1352460603
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352460599}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1352460604
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19029,6 +19049,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: f76db14a33123244b847a363d4dc7fe4, type: 2}
+--- !u!65 &1352460607
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352460599}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1353267620
 GameObject:
   m_ObjectHideFlags: 0
@@ -19980,10 +20021,10 @@ GameObject:
   - component: {fileID: 1392480754}
   - component: {fileID: 1392480759}
   - component: {fileID: 1392480758}
-  - component: {fileID: 1392480757}
   - component: {fileID: 1392480756}
   - component: {fileID: 1392480755}
   - component: {fileID: 1392480760}
+  - component: {fileID: 1392480761}
   m_Layer: 0
   m_Name: Capsule (21)
   m_TagString: Untagged
@@ -20001,7 +20042,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.448, y: 1.1550002, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -20160,29 +20201,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1392480757
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392480753}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1392480758
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20252,6 +20270,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: cb8c7cb565e2fc1489a9d8b3ea64fc8f, type: 2}
+--- !u!65 &1392480761
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392480753}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1400864811
 GameObject:
   m_ObjectHideFlags: 0
@@ -20352,10 +20391,10 @@ GameObject:
   - component: {fileID: 1407086483}
   - component: {fileID: 1407086489}
   - component: {fileID: 1407086488}
-  - component: {fileID: 1407086487}
   - component: {fileID: 1407086486}
   - component: {fileID: 1407086485}
   - component: {fileID: 1407086484}
+  - component: {fileID: 1407086490}
   m_Layer: 0
   m_Name: Capsule (43)
   m_TagString: Untagged
@@ -20373,7 +20412,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.78999996, z: 1.976}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -20545,29 +20584,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1407086487
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407086482}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1407086488
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20624,6 +20640,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407086482}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1407086490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407086482}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1415478091
 GameObject:
   m_ObjectHideFlags: 0
@@ -20635,10 +20672,10 @@ GameObject:
   - component: {fileID: 1415478092}
   - component: {fileID: 1415478097}
   - component: {fileID: 1415478096}
-  - component: {fileID: 1415478095}
   - component: {fileID: 1415478094}
   - component: {fileID: 1415478093}
   - component: {fileID: 1415478098}
+  - component: {fileID: 1415478099}
   m_Layer: 0
   m_Name: Capsule (15)
   m_TagString: Untagged
@@ -20655,8 +20692,8 @@ Transform:
   m_GameObject: {fileID: 1415478091}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.405, y: 1.17, z: 6.75}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalPosition: {x: -12.405, y: 1.166, z: 6.75}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -20815,29 +20852,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1415478095
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415478091}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1415478096
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20907,6 +20921,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: d81f1681d6517ac478f886ea009cf68d, type: 2}
+--- !u!65 &1415478099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415478091}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1423424082
 GameObject:
   m_ObjectHideFlags: 0
@@ -21190,10 +21225,10 @@ GameObject:
   - component: {fileID: 1471851093}
   - component: {fileID: 1471851099}
   - component: {fileID: 1471851098}
-  - component: {fileID: 1471851097}
   - component: {fileID: 1471851096}
   - component: {fileID: 1471851095}
   - component: {fileID: 1471851094}
+  - component: {fileID: 1471851100}
   m_Layer: 0
   m_Name: Capsule (27)
   m_TagString: Untagged
@@ -21211,7 +21246,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.791, z: 0.644}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -21383,29 +21418,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1471851097
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1471851092}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1471851098
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21462,6 +21474,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471851092}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1471851100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471851092}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1474902553
 GameObject:
   m_ObjectHideFlags: 0
@@ -21726,10 +21759,10 @@ GameObject:
   - component: {fileID: 1505754427}
   - component: {fileID: 1505754426}
   - component: {fileID: 1505754425}
-  - component: {fileID: 1505754424}
   - component: {fileID: 1505754423}
   - component: {fileID: 1505754422}
   - component: {fileID: 1505754428}
+  - component: {fileID: 1505754429}
   m_Layer: 0
   m_Name: Capsule (7)
   m_TagString: Untagged
@@ -21891,29 +21924,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1505754424
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1505754421}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1505754425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21980,7 +21990,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.06, y: 0.5630001, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -21998,6 +22008,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 4c3ee47e56130d54ab308ba09d1c0b08, type: 2}
+--- !u!65 &1505754429
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505754421}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1521918307
 GameObject:
   m_ObjectHideFlags: 0
@@ -23286,10 +23317,10 @@ GameObject:
   - component: {fileID: 1644069607}
   - component: {fileID: 1644069612}
   - component: {fileID: 1644069611}
-  - component: {fileID: 1644069610}
   - component: {fileID: 1644069609}
   - component: {fileID: 1644069608}
   - component: {fileID: 1644069613}
+  - component: {fileID: 1644069614}
   m_Layer: 0
   m_Name: Capsule (23)
   m_TagString: Untagged
@@ -23307,7 +23338,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.2, y: 1.1590003, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -23466,29 +23497,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1644069610
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644069606}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1644069611
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23558,6 +23566,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 1007cd3919b197043905919dfe70bff0, type: 2}
+--- !u!65 &1644069614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644069606}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &1650085729
 GameObject:
   m_ObjectHideFlags: 0
@@ -24039,10 +24068,10 @@ GameObject:
   - component: {fileID: 1661021314}
   - component: {fileID: 1661021319}
   - component: {fileID: 1661021318}
-  - component: {fileID: 1661021317}
   - component: {fileID: 1661021316}
   - component: {fileID: 1661021315}
   - component: {fileID: 1661021320}
+  - component: {fileID: 1661021321}
   m_Layer: 0
   m_Name: Capsule (38)
   m_TagString: Untagged
@@ -24060,7 +24089,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.58, y: -0.04400003, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -24219,29 +24248,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1661021317
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661021313}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1661021318
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24311,6 +24317,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 6f75360ffb3ffeb46a0091baa3dcecde, type: 2}
+--- !u!65 &1661021321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661021313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1670317217
 GameObject:
   m_ObjectHideFlags: 0
@@ -25472,10 +25499,10 @@ GameObject:
   - component: {fileID: 1765678414}
   - component: {fileID: 1765678413}
   - component: {fileID: 1765678412}
-  - component: {fileID: 1765678411}
   - component: {fileID: 1765678410}
   - component: {fileID: 1765678409}
   - component: {fileID: 1765678415}
+  - component: {fileID: 1765678416}
   m_Layer: 0
   m_Name: Capsule (14)
   m_TagString: Untagged
@@ -25637,29 +25664,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1765678411
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1765678408}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1765678412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25726,7 +25730,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.317, z: 1.638}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -25744,6 +25748,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: e2c5f5e1c8a35dc4e8721b8cc687be86, type: 2}
+--- !u!65 &1765678416
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765678408}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1773476954
 GameObject:
   m_ObjectHideFlags: 0
@@ -26533,10 +26558,10 @@ GameObject:
   - component: {fileID: 1829005460}
   - component: {fileID: 1829005459}
   - component: {fileID: 1829005458}
-  - component: {fileID: 1829005457}
   - component: {fileID: 1829005456}
   - component: {fileID: 1829005455}
   - component: {fileID: 1829005461}
+  - component: {fileID: 1829005462}
   m_Layer: 0
   m_Name: Capsule (26)
   m_TagString: Untagged
@@ -26698,29 +26723,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1829005457
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829005454}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1829005458
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26787,7 +26789,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15.882, y: 0.563, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -26805,6 +26807,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 8962cd656fc452b4596a02ef7416858f, type: 2}
+--- !u!65 &1829005462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829005454}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0.00000047683716, z: 0}
 --- !u!1 &1832855911
 GameObject:
   m_ObjectHideFlags: 0
@@ -27089,10 +27112,10 @@ GameObject:
   - component: {fileID: 1855995591}
   - component: {fileID: 1855995590}
   - component: {fileID: 1855995589}
-  - component: {fileID: 1855995588}
   - component: {fileID: 1855995587}
   - component: {fileID: 1855995586}
   - component: {fileID: 1855995592}
+  - component: {fileID: 1855995593}
   m_Layer: 0
   m_Name: Capsule (25)
   m_TagString: Untagged
@@ -27254,29 +27277,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1855995588
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855995585}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1855995589
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27343,7 +27343,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -16.92, y: 0.559, z: 7.0619993}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -27361,6 +27361,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 1227d62caf7290d409e7718afd3335b9, type: 2}
+--- !u!65 &1855995593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855995585}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1859241943
 GameObject:
   m_ObjectHideFlags: 0
@@ -28442,10 +28463,10 @@ GameObject:
   - component: {fileID: 2008607183}
   - component: {fileID: 2008607189}
   - component: {fileID: 2008607188}
-  - component: {fileID: 2008607187}
   - component: {fileID: 2008607186}
   - component: {fileID: 2008607185}
   - component: {fileID: 2008607184}
+  - component: {fileID: 2008607190}
   m_Layer: 0
   m_Name: Capsule (28)
   m_TagString: Untagged
@@ -28463,7 +28484,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.788, z: 3.322}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -28635,29 +28656,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2008607187
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008607182}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2008607188
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28714,6 +28712,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008607182}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &2008607190
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008607182}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &2012332949
 GameObject:
   m_ObjectHideFlags: 0
@@ -28725,10 +28744,10 @@ GameObject:
   - component: {fileID: 2012332950}
   - component: {fileID: 2012332955}
   - component: {fileID: 2012332954}
-  - component: {fileID: 2012332953}
   - component: {fileID: 2012332952}
   - component: {fileID: 2012332951}
   - component: {fileID: 2012332956}
+  - component: {fileID: 2012332957}
   m_Layer: 0
   m_Name: Capsule (33)
   m_TagString: Untagged
@@ -28746,7 +28765,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.405, y: -0.00999999, z: 6.754}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -28905,29 +28924,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2012332953
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012332949}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2012332954
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28997,6 +28993,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: cd64f71aa97dd234096046acb887da29, type: 2}
+--- !u!65 &2012332957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012332949}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2044847379
 GameObject:
   m_ObjectHideFlags: 0
@@ -29008,10 +29025,10 @@ GameObject:
   - component: {fileID: 2044847385}
   - component: {fileID: 2044847384}
   - component: {fileID: 2044847383}
-  - component: {fileID: 2044847382}
   - component: {fileID: 2044847381}
   - component: {fileID: 2044847380}
   - component: {fileID: 2044847386}
+  - component: {fileID: 2044847387}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -29173,29 +29190,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2044847382
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044847379}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2044847383
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29261,8 +29255,8 @@ Transform:
   m_GameObject: {fileID: 2044847379}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.1, y: 0.594, z: 6.754}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalPosition: {x: -12.1, y: 0.587, z: 6.754}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -29280,6 +29274,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 065f1b4694194ca45b5d7463505f9da7, type: 2}
+--- !u!65 &2044847387
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044847379}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2046251764
 GameObject:
   m_ObjectHideFlags: 0
@@ -29291,10 +29306,10 @@ GameObject:
   - component: {fileID: 2046251770}
   - component: {fileID: 2046251769}
   - component: {fileID: 2046251768}
-  - component: {fileID: 2046251767}
   - component: {fileID: 2046251766}
   - component: {fileID: 2046251765}
   - component: {fileID: 2046251771}
+  - component: {fileID: 2046251772}
   m_Layer: 0
   m_Name: Capsule (3)
   m_TagString: Untagged
@@ -29456,29 +29471,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2046251767
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2046251764}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2046251768
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29545,7 +29537,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10.74, y: 0.594, z: 6.816}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -29563,6 +29555,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: e2a612d19808c0b4ea88df2bcf626b2e, type: 2}
+--- !u!65 &2046251772
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046251764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2046395665
 GameObject:
   m_ObjectHideFlags: 0
@@ -29849,10 +29862,10 @@ GameObject:
   - component: {fileID: 2053800434}
   - component: {fileID: 2053800439}
   - component: {fileID: 2053800438}
-  - component: {fileID: 2053800437}
   - component: {fileID: 2053800436}
   - component: {fileID: 2053800435}
   - component: {fileID: 2053800440}
+  - component: {fileID: 2053800441}
   m_Layer: 0
   m_Name: Capsule (35)
   m_TagString: Untagged
@@ -29870,7 +29883,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.071, y: -0.00999999, z: 6.816}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -30029,29 +30042,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2053800437
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053800433}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2053800438
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30121,6 +30111,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: 9769916df64459f4e9a15d6f22ff652f, type: 2}
+--- !u!65 &2053800441
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053800433}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2056587489
 GameObject:
   m_ObjectHideFlags: 0
@@ -30132,10 +30143,10 @@ GameObject:
   - component: {fileID: 2056587490}
   - component: {fileID: 2056587495}
   - component: {fileID: 2056587494}
-  - component: {fileID: 2056587493}
   - component: {fileID: 2056587492}
   - component: {fileID: 2056587491}
   - component: {fileID: 2056587496}
+  - component: {fileID: 2056587497}
   m_Layer: 0
   m_Name: Capsule (16)
   m_TagString: Untagged
@@ -30152,8 +30163,8 @@ Transform:
   m_GameObject: {fileID: 2056587489}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.722, y: 1.19, z: 6.759}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
+  m_LocalPosition: {x: -11.722, y: 1.175, z: 6.759}
+  m_LocalScale: {x: 0.361525, y: 0.14461, z: 0.361525}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605343257}
@@ -30312,29 +30323,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2056587493
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056587489}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2056587494
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30404,6 +30392,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
   thisItem: {fileID: 11400000, guid: a208320c474a5854d902bd63e21cf2b2, type: 2}
+--- !u!65 &2056587497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056587489}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &2057603258
 GameObject:
   m_ObjectHideFlags: 0
