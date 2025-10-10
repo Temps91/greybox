@@ -485,6 +485,7 @@ GameObject:
   - component: {fileID: 5802168}
   - component: {fileID: 5802167}
   - component: {fileID: 5802166}
+  - component: {fileID: 5802171}
   m_Layer: 0
   m_Name: Capsule (19)
   m_TagString: Untagged
@@ -740,6 +741,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5802164}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &5802171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: be2d209e2d21c504daad28dac87031c1, type: 2}
 --- !u!1 &14553123
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +909,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &30061298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,6 +1690,7 @@ GameObject:
   - component: {fileID: 118818445}
   - component: {fileID: 118818444}
   - component: {fileID: 118818443}
+  - component: {fileID: 118818449}
   m_Layer: 0
   m_Name: Capsule (6)
   m_TagString: Untagged
@@ -1930,6 +1946,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605343257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118818449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118818442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 529393aa98a2c394f87a5b2d35029190, type: 2}
 --- !u!1 &119831823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,6 +2791,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &181028955
 GameObject:
   m_ObjectHideFlags: 0
@@ -3117,6 +3147,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &192394732
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,6 +3303,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &194315716
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,6 +4401,7 @@ GameObject:
   - component: {fileID: 255736671}
   - component: {fileID: 255736670}
   - component: {fileID: 255736669}
+  - component: {fileID: 255736674}
   m_Layer: 0
   m_Name: Capsule (22)
   m_TagString: Untagged
@@ -4624,6 +4657,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255736667}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &255736674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255736667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 17922a0aea3cc5b448812f46854a4b85, type: 2}
 --- !u!1 &256551031
 GameObject:
   m_ObjectHideFlags: 0
@@ -4943,6 +4989,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &283500313
 GameObject:
   m_ObjectHideFlags: 0
@@ -4957,6 +5004,7 @@ GameObject:
   - component: {fileID: 283500317}
   - component: {fileID: 283500316}
   - component: {fileID: 283500315}
+  - component: {fileID: 283500320}
   m_Layer: 0
   m_Name: Capsule (34)
   m_TagString: Untagged
@@ -5212,6 +5260,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283500313}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &283500320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283500313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 44fdf5004a88d5147abb76f9bd81ca43, type: 2}
 --- !u!1 &300668398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5656,6 +5717,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &337087531
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,6 +6021,7 @@ GameObject:
   - component: {fileID: 354730312}
   - component: {fileID: 354730311}
   - component: {fileID: 354730310}
+  - component: {fileID: 354730315}
   m_Layer: 0
   m_Name: Capsule (20)
   m_TagString: Untagged
@@ -6214,6 +6277,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354730308}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &354730315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354730308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 8bab3ff06f75276479af1681c90194b6, type: 2}
 --- !u!1 &367032306
 GameObject:
   m_ObjectHideFlags: 0
@@ -6539,6 +6615,7 @@ GameObject:
   - component: {fileID: 383289154}
   - component: {fileID: 383289153}
   - component: {fileID: 383289152}
+  - component: {fileID: 383289158}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: Untagged
@@ -6794,6 +6871,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605343257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &383289158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383289151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 0aea4b4664826a84d9f0d2f6c0fbf860, type: 2}
 --- !u!1 &387305137
 GameObject:
   m_ObjectHideFlags: 0
@@ -6949,6 +7039,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &391661139
 GameObject:
   m_ObjectHideFlags: 0
@@ -7415,6 +7506,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   caida: {fileID: 8300000, guid: fa23181e366f4a740ad09d5cc8c4bcae, type: 3}
   bichos: {fileID: 0}
+  sonidosInofensivos: []
+  sonidosDeSusto: []
+  dialogos: []
+  ambientes: []
 --- !u!65 &468049249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9072,6 +9167,7 @@ GameObject:
   - component: {fileID: 668468609}
   - component: {fileID: 668468608}
   - component: {fileID: 668468607}
+  - component: {fileID: 668468612}
   m_Layer: 0
   m_Name: Capsule (37)
   m_TagString: Untagged
@@ -9327,6 +9423,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668468605}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &668468612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668468605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 4f548567322ade44cb9769a572647f47, type: 2}
 --- !u!1 &679665642
 GameObject:
   m_ObjectHideFlags: 0
@@ -10080,6 +10189,7 @@ GameObject:
   - component: {fileID: 716208700}
   - component: {fileID: 716208699}
   - component: {fileID: 716208698}
+  - component: {fileID: 716208704}
   m_Layer: 0
   m_Name: Capsule (4)
   m_TagString: Untagged
@@ -10335,6 +10445,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605343257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &716208704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716208697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 98740ff08a93be141b71dac72be79d3a, type: 2}
 --- !u!1 &738931606
 GameObject:
   m_ObjectHideFlags: 0
@@ -10579,6 +10702,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &760784701
 GameObject:
   m_ObjectHideFlags: 0
@@ -11706,6 +11830,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &858180507
 GameObject:
   m_ObjectHideFlags: 0
@@ -12240,6 +12365,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &914383991
 GameObject:
   m_ObjectHideFlags: 0
@@ -14028,7 +14154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.65
+      value: 40.01
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14036,7 +14162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.8
+      value: 5.89
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14102,6 +14228,7 @@ GameObject:
   - component: {fileID: 1019032473}
   - component: {fileID: 1019032472}
   - component: {fileID: 1019032471}
+  - component: {fileID: 1019032477}
   m_Layer: 0
   m_Name: Capsule (5)
   m_TagString: Untagged
@@ -14357,6 +14484,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605343257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1019032477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019032470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: d8e6870ea05ac064eb0e20e8d71fcf52, type: 2}
 --- !u!1 &1020320825
 GameObject:
   m_ObjectHideFlags: 0
@@ -15821,6 +15961,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &1158170424
 GameObject:
   m_ObjectHideFlags: 0
@@ -16806,6 +16947,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &1248835202
 GameObject:
   m_ObjectHideFlags: 0
@@ -17414,6 +17556,7 @@ GameObject:
   - component: {fileID: 1292373050}
   - component: {fileID: 1292373049}
   - component: {fileID: 1292373048}
+  - component: {fileID: 1292373053}
   m_Layer: 0
   m_Name: Capsule (36)
   m_TagString: Untagged
@@ -17669,6 +17812,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292373046}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1292373053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292373046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 0520e3722e099bd48959659758c952fa, type: 2}
 --- !u!1 &1321161850
 GameObject:
   m_ObjectHideFlags: 0
@@ -17824,6 +17980,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &1338035751
 GameObject:
   m_ObjectHideFlags: 0
@@ -18515,6 +18672,7 @@ GameObject:
   - component: {fileID: 1352460603}
   - component: {fileID: 1352460602}
   - component: {fileID: 1352460601}
+  - component: {fileID: 1352460606}
   m_Layer: 0
   m_Name: Capsule (39)
   m_TagString: Untagged
@@ -18770,6 +18928,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352460599}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1352460606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352460599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: f76db14a33123244b847a363d4dc7fe4, type: 2}
 --- !u!1 &1353267620
 GameObject:
   m_ObjectHideFlags: 0
@@ -19072,6 +19243,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &1366248138
 GameObject:
   m_ObjectHideFlags: 0
@@ -19723,6 +19895,7 @@ GameObject:
   - component: {fileID: 1392480757}
   - component: {fileID: 1392480756}
   - component: {fileID: 1392480755}
+  - component: {fileID: 1392480760}
   m_Layer: 0
   m_Name: Capsule (21)
   m_TagString: Untagged
@@ -19978,6 +20151,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392480753}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1392480760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392480753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: cb8c7cb565e2fc1489a9d8b3ea64fc8f, type: 2}
 --- !u!1 &1400864811
 GameObject:
   m_ObjectHideFlags: 0
@@ -20364,6 +20550,7 @@ GameObject:
   - component: {fileID: 1415478095}
   - component: {fileID: 1415478094}
   - component: {fileID: 1415478093}
+  - component: {fileID: 1415478098}
   m_Layer: 0
   m_Name: Capsule (15)
   m_TagString: Untagged
@@ -20380,7 +20567,7 @@ Transform:
   m_GameObject: {fileID: 1415478091}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.405, y: 1.1900002, z: 6.754}
+  m_LocalPosition: {x: -12.405, y: 1.17, z: 6.75}
   m_LocalScale: {x: 0.5, y: 0.2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20619,6 +20806,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415478091}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1415478098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415478091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: d81f1681d6517ac478f886ea009cf68d, type: 2}
 --- !u!1 &1423424082
 GameObject:
   m_ObjectHideFlags: 0
@@ -20650,6 +20850,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   caida: {fileID: 8300000, guid: fa23181e366f4a740ad09d5cc8c4bcae, type: 3}
   bichos: {fileID: 8300000, guid: fa23181e366f4a740ad09d5cc8c4bcae, type: 3}
+  sonidosInofensivos: []
+  sonidosDeSusto: []
+  dialogos: []
+  ambientes: []
 --- !u!4 &1423424084
 Transform:
   m_ObjectHideFlags: 0
@@ -21437,6 +21641,7 @@ GameObject:
   - component: {fileID: 1505754424}
   - component: {fileID: 1505754423}
   - component: {fileID: 1505754422}
+  - component: {fileID: 1505754428}
   m_Layer: 0
   m_Name: Capsule (7)
   m_TagString: Untagged
@@ -21692,6 +21897,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605343257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505754428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505754421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 4c3ee47e56130d54ab308ba09d1c0b08, type: 2}
 --- !u!1 &1521918307
 GameObject:
   m_ObjectHideFlags: 0
@@ -22790,6 +23008,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &1636968547
 GameObject:
   m_ObjectHideFlags: 0
@@ -22982,6 +23201,7 @@ GameObject:
   - component: {fileID: 1644069610}
   - component: {fileID: 1644069609}
   - component: {fileID: 1644069608}
+  - component: {fileID: 1644069613}
   m_Layer: 0
   m_Name: Capsule (23)
   m_TagString: Untagged
@@ -23237,6 +23457,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644069606}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1644069613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644069606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 1007cd3919b197043905919dfe70bff0, type: 2}
 --- !u!1 &1650085729
 GameObject:
   m_ObjectHideFlags: 0
@@ -23721,6 +23954,7 @@ GameObject:
   - component: {fileID: 1661021317}
   - component: {fileID: 1661021316}
   - component: {fileID: 1661021315}
+  - component: {fileID: 1661021320}
   m_Layer: 0
   m_Name: Capsule (38)
   m_TagString: Untagged
@@ -23976,6 +24210,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661021313}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1661021320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661021313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 6f75360ffb3ffeb46a0091baa3dcecde, type: 2}
 --- !u!1 &1670317217
 GameObject:
   m_ObjectHideFlags: 0
@@ -24131,6 +24378,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &1672829788
 GameObject:
   m_ObjectHideFlags: 0
@@ -24795,6 +25043,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &1713862506
 GameObject:
   m_ObjectHideFlags: 0
@@ -26690,6 +26939,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   gameManager: {fileID: 1888287922}
+  vida: 3
 --- !u!136 &1852488714
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27268,6 +27518,7 @@ MonoBehaviour:
   suelo: {fileID: 1071209731}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
+  aire: {fileID: 0}
 --- !u!1 &1867890724
 GameObject:
   m_ObjectHideFlags: 0
@@ -28389,6 +28640,7 @@ GameObject:
   - component: {fileID: 2012332953}
   - component: {fileID: 2012332952}
   - component: {fileID: 2012332951}
+  - component: {fileID: 2012332956}
   m_Layer: 0
   m_Name: Capsule (33)
   m_TagString: Untagged
@@ -28644,6 +28896,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012332949}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2012332956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012332949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: cd64f71aa97dd234096046acb887da29, type: 2}
 --- !u!1 &2044847379
 GameObject:
   m_ObjectHideFlags: 0
@@ -28658,6 +28923,7 @@ GameObject:
   - component: {fileID: 2044847382}
   - component: {fileID: 2044847381}
   - component: {fileID: 2044847380}
+  - component: {fileID: 2044847386}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -28913,6 +29179,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605343257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2044847386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044847379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 065f1b4694194ca45b5d7463505f9da7, type: 2}
 --- !u!1 &2046251764
 GameObject:
   m_ObjectHideFlags: 0
@@ -28927,6 +29206,7 @@ GameObject:
   - component: {fileID: 2046251767}
   - component: {fileID: 2046251766}
   - component: {fileID: 2046251765}
+  - component: {fileID: 2046251771}
   m_Layer: 0
   m_Name: Capsule (3)
   m_TagString: Untagged
@@ -29182,6 +29462,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605343257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2046251771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046251764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: e2a612d19808c0b4ea88df2bcf626b2e, type: 2}
 --- !u!1 &2046395665
 GameObject:
   m_ObjectHideFlags: 0
@@ -29471,6 +29764,7 @@ GameObject:
   - component: {fileID: 2053800437}
   - component: {fileID: 2053800436}
   - component: {fileID: 2053800435}
+  - component: {fileID: 2053800440}
   m_Layer: 0
   m_Name: Capsule (35)
   m_TagString: Untagged
@@ -29726,6 +30020,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053800433}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2053800440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053800433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: 9769916df64459f4e9a15d6f22ff652f, type: 2}
 --- !u!1 &2056587489
 GameObject:
   m_ObjectHideFlags: 0
@@ -29740,6 +30047,7 @@ GameObject:
   - component: {fileID: 2056587493}
   - component: {fileID: 2056587492}
   - component: {fileID: 2056587491}
+  - component: {fileID: 2056587496}
   m_Layer: 0
   m_Name: Capsule (16)
   m_TagString: Untagged
@@ -29995,6 +30303,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056587489}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2056587496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056587489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caeab339a1b65324aacf48bd628d143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerItems
+  thisItem: {fileID: 11400000, guid: a208320c474a5854d902bd63e21cf2b2, type: 2}
 --- !u!1 &2057603258
 GameObject:
   m_ObjectHideFlags: 0

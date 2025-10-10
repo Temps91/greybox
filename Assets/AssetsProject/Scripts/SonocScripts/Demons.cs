@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
 public class Demons
 {
     public string demonName;
-    public Item[] itemsToSummon;
+    public List<Item> itemsToSummon;
+
 }

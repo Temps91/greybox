@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664db959146e6b94e9ef0e2ed53a617b, type: 3}
-  m_Name: Jar of Files
-  m_EditorClassIdentifier: Assembly-CSharp::Organ
+  m_Script: {fileID: 11500000, guid: 36864f998c6cd3d42b9237c3acfdf727, type: 3}
+  m_Name: DriedRose
+  m_EditorClassIdentifier: Assembly-CSharp::GenericObject
   typeItem: 1
