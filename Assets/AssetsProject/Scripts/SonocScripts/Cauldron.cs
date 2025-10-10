@@ -4,15 +4,17 @@ using System.Collections;
 public class Cauldron : MonoBehaviour
 {
     public Queue organs;
+    public Queue candles;
 
     public ParticleSystem fire;
     public ParticleSystem vfx;
 
-    public Demons[] allDemons;
+    public DemonsManager demonsManager;
 
     private void Start()
     {
         organs = new Queue();
+        candles = new Queue();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,6 +30,8 @@ public class Cauldron : MonoBehaviour
                     {
                         Debug.Log("Ahi va un organo nuevo");
                         organs.Enqueue(otherItem.thisItem);
+
+                        demonsManager.CheckItem(otherItem.thisItem);
                     }
                     else
                     {
@@ -37,17 +41,31 @@ public class Cauldron : MonoBehaviour
                     break;
                 case enumTypeItem.objectGeneric:
                 {
-                
+                        demonsManager.CheckItem(otherItem.thisItem);
                 }
-                    break;
+                break;
             
                 case enumTypeItem.candle:
                 {
-                    Color newCandleColor = ((Candle)otherItem.thisItem).targetColor;
-                    var mainProperties = fire.main;
-                    mainProperties.startColor = newCandleColor;
+                    if (candles.Count == 0)
+                    {
+                        Debug.Log("Velita y me pinto de....");
+                        Color newCandleColor = ((Candle)otherItem.thisItem).targetColor;
+                        var mainProperties = fire.main;
+                        mainProperties.startColor = newCandleColor;
+                        candles.Enqueue(otherItem.thisItem);
+                        demonsManager.CheckItem(otherItem.thisItem);
+                    }
+                    else
+                    {
+                       Debug.Log("Ya hay una vela");
+                            //Reinicia Todo
+                    }
+
+
+
                 }
-                    break;
+                break;
             }
         }
     }

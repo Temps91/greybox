@@ -7,4 +7,21 @@ public class Demons
     public string demonName;
     public List<Item> itemsToSummon;
 
+    public int collectedItems = 0;
+
+    public bool AddItem(Item item)
+    {
+        if (itemsToSummon.Exists(i => i.name == item.name))
+        {
+            collectedItems++;
+            Debug.Log($"Demon {demonName} recibió {item.name}, contador: {collectedItems}");
+
+            if (collectedItems >= 6)
+            {
+                Debug.Log($"¡Demon {demonName} ha sido activado!");
+                return true;
+            }
+        }
+        return false;
+    }
 }
