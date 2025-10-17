@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Criature : MonoBehaviour
+public class Criature : MonoBehaviour, IVisible
 {
     public GameObject prefabCriatura;
     public GameObject player;
@@ -51,4 +51,8 @@ public class Criature : MonoBehaviour
 
     }
 
+    public void InSight()
+    {
+        ActivarCriatura();
+    }
 }

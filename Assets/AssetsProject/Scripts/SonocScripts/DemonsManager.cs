@@ -11,6 +11,7 @@ public class DemonsManager : MonoBehaviour
             bool activated = demon.AddItem(pickedItem);
             if (activated)
             {
+                demon.ActiveAllObjects();
                 Debug.Log($"Evento: Demon {demon.demonName} activado por el manager");
             }
         }

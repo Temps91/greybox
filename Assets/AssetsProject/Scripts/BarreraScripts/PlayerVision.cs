@@ -5,6 +5,7 @@ public class PlayerVision : MonoBehaviour
 {
     public float rayDistance = 10f;
     public LayerMask layer;
+   
     public GameManager gameManager;
     public int vida = 3;
 
@@ -19,10 +20,10 @@ public class PlayerVision : MonoBehaviour
         {
             if (probabilidad >= 4.5f && probabilidad <= 5)
             {
-                Criature criatura = hit.collider.GetComponent<Criature>();
-                if (criatura != null)
+             
+                if (hit.collider.TryGetComponent<IVisible>(out var visibleObject))
                 {
-                    criatura.ActivarCriatura();
+                    visibleObject.InSight();
 
                 }
             }
@@ -53,4 +54,11 @@ public class PlayerVision : MonoBehaviour
         }
     }
 
+}
+
+
+
+public interface IVisible
+{
+    void InSight();
 }

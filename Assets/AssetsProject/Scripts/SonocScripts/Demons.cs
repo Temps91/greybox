@@ -6,6 +6,7 @@ public class Demons
 {
     public string demonName;
     public List<Item> itemsToSummon;
+    public GameObject[] objectsToActivate;
 
     public int collectedItems = 0;
 
@@ -24,4 +25,14 @@ public class Demons
         }
         return false;
     }
+
+    public void ActiveAllObjects()
+    {
+        for(int i = 0; i < objectsToActivate.Length; i++)
+        {
+            objectsToActivate[i].SetActive(true);
+        }
+    }
+
+
 }
