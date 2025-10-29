@@ -2749,7 +2749,7 @@ Transform:
   m_LocalScale: {x: 0.25319, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1031347824}
+  m_Father: {fileID: 1130679095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &191911750
 Rigidbody:
@@ -2867,10 +2867,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &192394732
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,10 +3022,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &199610540
 GameObject:
   m_ObjectHideFlags: 0
@@ -4513,10 +4511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &283500313
 GameObject:
   m_ObjectHideFlags: 0
@@ -5239,10 +5236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &337087531
 GameObject:
   m_ObjectHideFlags: 0
@@ -6386,10 +6382,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &391661139
 GameObject:
   m_ObjectHideFlags: 0
@@ -7615,8 +7610,8 @@ Transform:
   m_GameObject: {fileID: 540134424}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.99999994, z: -0, w: 0.00035221665}
-  m_LocalPosition: {x: 5.741852, y: -0.6972599, z: 24.97496}
-  m_LocalScale: {x: 3.2826195, y: 1.38629, z: 10.6459}
+  m_LocalPosition: {x: 11.98, y: -0.59, z: 28.76}
+  m_LocalScale: {x: 2.4182074, y: 1.38629, z: 7.34599}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2069425581}
@@ -9964,10 +9959,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &760784701
 GameObject:
   m_ObjectHideFlags: 0
@@ -10979,10 +10973,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &855146267
 GameObject:
   m_ObjectHideFlags: 0
@@ -11594,7 +11587,7 @@ Transform:
   m_LocalScale: {x: 0.25319, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1031347824}
+  m_Father: {fileID: 1130679095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &907751934
 Rigidbody:
@@ -11712,10 +11705,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &914383991
 GameObject:
   m_ObjectHideFlags: 0
@@ -11786,88 +11778,12 @@ Transform:
   m_GameObject: {fileID: 914383991}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.93, y: -2.07405, z: 6.4436493}
-  m_LocalScale: {x: 2.8525052, y: 1.3862877, z: 4.1703887}
+  m_LocalPosition: {x: -1.48, y: -2.07405, z: 14.2}
+  m_LocalScale: {x: 1.8483949, y: 1.3862877, z: 4.1703887}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1371854880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &927979316
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 927979317}
-  - component: {fileID: 927979319}
-  - component: {fileID: 927979318}
-  m_Layer: 0
-  m_Name: ColliderCuadroEscalera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &927979317
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927979316}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.99999994, z: -0, w: 0.00035221665}
-  m_LocalPosition: {x: -17.3, y: -0.6972599, z: 11.18}
-  m_LocalScale: {x: 3.2826197, y: 1.38629, z: 11.152449}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1130679095}
-  m_LocalEulerAnglesHint: {x: 0, y: 179.96, z: 0}
---- !u!114 &927979318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927979316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2771336f0ec3dfd4fab973b116e645d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lanzar
-  objetos:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1244102249}
-  fuerza: 50
-  jugador: {fileID: 1852488692}
-  objetoSeleccionado: {fileID: 0}
-  audioManager: {fileID: 1423424083}
-  gameManager: {fileID: 1888287922}
---- !u!65 &927979319
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927979316}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &933512117
 GameObject:
   m_ObjectHideFlags: 0
@@ -14269,41 +14185,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6648dcbfc22977488e9522459852b56, type: 3}
---- !u!1 &1031347823
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1031347824}
-  m_Layer: 0
-  m_Name: CuadroSala2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1031347824
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031347823}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.1418, y: 1.54726, z: -18.16861}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 907751933}
-  - {fileID: 1712690379}
-  - {fileID: 191911749}
-  - {fileID: 1091435746}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048477922
 GameObject:
   m_ObjectHideFlags: 0
@@ -14754,10 +14635,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.99999994, z: -0, w: 0.00035221665}
   m_LocalPosition: {x: -25.12, y: -0.6972599, z: 22.92}
-  m_LocalScale: {x: 3.28262, y: 1.38629, z: 6.799091}
+  m_LocalScale: {x: 3.2826202, y: 1.38629, z: 6.7990913}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1031347824}
+  m_Father: {fileID: 1130679095}
   m_LocalEulerAnglesHint: {x: 0, y: 179.96, z: 0}
 --- !u!114 &1091435747
 MonoBehaviour:
@@ -14775,6 +14656,7 @@ MonoBehaviour:
   - {fileID: 907751932}
   - {fileID: 1712690378}
   - {fileID: 191911748}
+  - {fileID: 1244102249}
   fuerza: 50
   jugador: {fileID: 1852488692}
   objetoSeleccionado: {fileID: 0}
@@ -15097,8 +14979,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 907751933}
+  - {fileID: 1712690379}
+  - {fileID: 191911749}
   - {fileID: 1244102250}
-  - {fileID: 927979317}
+  - {fileID: 1091435746}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143500689
@@ -15343,10 +15228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &1158170424
 GameObject:
   m_ObjectHideFlags: 0
@@ -15907,8 +15791,8 @@ Transform:
   m_GameObject: {fileID: 1230890854}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.707107, z: -0, w: 0.70710665}
-  m_LocalPosition: {x: 7.425, y: -2.07405, z: 10.86}
-  m_LocalScale: {x: 1.9140637, y: 1.38629, z: 5.792111}
+  m_LocalPosition: {x: 11.44, y: -0.55, z: 21.2}
+  m_LocalScale: {x: 1.4167325, y: 1.38629, z: 5.792111}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 649238887}
@@ -15970,7 +15854,7 @@ GameObject:
   - component: {fileID: 1244102251}
   - component: {fileID: 1244102255}
   m_Layer: 0
-  m_Name: CuadroEscalera
+  m_Name: CuadroSala2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16107,10 +15991,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &1248835202
 GameObject:
   m_ObjectHideFlags: 0
@@ -17104,10 +16987,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &1343478847
 GameObject:
   m_ObjectHideFlags: 0
@@ -18103,10 +17985,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &1366248138
 GameObject:
   m_ObjectHideFlags: 0
@@ -19849,6 +19730,7 @@ GameObject:
   - component: {fileID: 1434384050}
   - component: {fileID: 1434384049}
   - component: {fileID: 1434384048}
+  - component: {fileID: 1434384052}
   m_Layer: 0
   m_Name: suelooo
   m_TagString: Untagged
@@ -19949,6 +19831,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1434384052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434384047}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.000002, y: 4.577961, z: 10}
+  m_Center: {x: 0, y: -0.47829568, z: 0}
 --- !u!1 &1440025609
 GameObject:
   m_ObjectHideFlags: 0
@@ -22112,10 +22015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &1636968547
 GameObject:
   m_ObjectHideFlags: 0
@@ -23478,10 +23380,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &1672829788
 GameObject:
   m_ObjectHideFlags: 0
@@ -24025,7 +23926,7 @@ Transform:
   m_LocalScale: {x: 0.25319, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1031347824}
+  m_Father: {fileID: 1130679095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1712690380
 Rigidbody:
@@ -24143,10 +24044,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03997e66fbe7b548aaf42997f4ba8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeteccionCaida
-  suelo: {fileID: 0}
+  suelo: {fileID: 1434384047}
   audioManagerDeteccionCaida: {fileID: 0}
   player: {fileID: 1852488692}
-  aire: {fileID: 0}
 --- !u!1 &1713862506
 GameObject:
   m_ObjectHideFlags: 0
@@ -24374,8 +24274,8 @@ Transform:
   m_GameObject: {fileID: 1738141784}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.84, y: -2.07405, z: 6.4436493}
-  m_LocalScale: {x: 2.8525052, y: 1.3862877, z: 4.1703887}
+  m_LocalPosition: {x: 5.97, y: -2.07405, z: 14.45}
+  m_LocalScale: {x: 1.9193683, y: 1.3862877, z: 3.5889947}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1371854880}
@@ -48336,7 +48236,6 @@ SceneRoots:
   - {fileID: 649238887}
   - {fileID: 2069425581}
   - {fileID: 1130679095}
-  - {fileID: 1031347824}
   - {fileID: 1774157121}
   - {fileID: 435023162}
   - {fileID: 143884047}

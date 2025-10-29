@@ -6,7 +6,6 @@ public class DeteccionCaida : MonoBehaviour
     public GameObject suelo;
     [HideInInspector] public AudioManager audioManagerDeteccionCaida;
     public GameObject player;
-    public GameObject aire;
 
     private void OnCollisionEnter(Collision collision)
     {
