@@ -5,6 +5,7 @@ public class PlayerVision : MonoBehaviour
 {
     public float rayDistance = 10f;
     public LayerMask layer;
+    public GameReset gameReset;
    
     public GameManager gameManager;
     public int vida = 3;
@@ -50,7 +51,8 @@ public class PlayerVision : MonoBehaviour
 
         if (vida <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            gameReset.ResetJuego();
+
         }
     }
 
