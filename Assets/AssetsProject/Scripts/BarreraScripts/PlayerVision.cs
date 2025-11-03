@@ -19,9 +19,15 @@ public class PlayerVision : MonoBehaviour
 
         if (Physics.Raycast(origin, direction, out hit, rayDistance, layer))
         {
-            if (probabilidad >= 4.5f && probabilidad <= 5)
+            int layerGolpeado = hit.collider.gameObject.layer;
+            string nombreLayer = LayerMask.LayerToName(layerGolpeado);
+            if (nombreLayer == "Enemie" && probabilidad >= 4.5f && probabilidad <= 5)
             {
              
+                
+            }
+            if (nombreLayer == "Sight")
+            {
                 if (hit.collider.TryGetComponent<IVisible>(out var visibleObject))
                 {
                     visibleObject.InSight();

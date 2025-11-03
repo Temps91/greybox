@@ -5,12 +5,19 @@ public class GameManager : MonoBehaviour
 {
     public float timer = 0;
     public float maxTimer;
+    public int sigilosEncontrados;
+    public GameReset gameReset;
 
 
     private void Update()
     {
         Contador();
         //Debug.Log("Tiempo es de: " + timer);
+        if (sigilosEncontrados >= 3)
+        {
+            gameReset.ResetJuego();
+
+        }
     }
     public void Contador()
     {
@@ -25,6 +32,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("greybox");
     }
+    
 
 }
 
