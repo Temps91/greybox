@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 442913690}
   - component: {fileID: 442913694}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2260,7 +2260,7 @@ MonoBehaviour:
   jugador: {fileID: 229282143}
   objetoSeleccionado: {fileID: 0}
   audioManager: {fileID: 1519805892}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 495418248}
 --- !u!65 &1139524926
 BoxCollider:
   m_ObjectHideFlags: 0
