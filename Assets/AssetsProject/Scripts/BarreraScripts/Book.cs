@@ -12,8 +12,8 @@ public class Book : MonoBehaviour
     public Sprite[] paginasDerecha;
 
     [Header("Animaciones de paso de página")]
-    public Animator animadorSiguiente; // Animator del objeto para pasar página
-    public Animator animadorRegresar;  // Animator del objeto para regresar página
+    public Animator animadorSiguiente; 
+    public Animator animadorRegresar;  
     public string triggerSiguiente = "PasarPagina";
     public string triggerRegresar = "RegresarPagina";
 
@@ -28,29 +28,27 @@ public class Book : MonoBehaviour
     public void SiguientePagina()
     {
         if (animando || indicePagina >= paginasIzquierda.Length - 1)
-        {
-        return;
-            
-        } 
+            return;
+
         StartCoroutine(PasarPagina(true));
     }
 
     public void PaginaAnterior()
     {
         if (animando || indicePagina <= 0)
-        {
-        return;
+            return;
 
-        } 
         StartCoroutine(PasarPagina(false));
     }
 
     private System.Collections.IEnumerator PasarPagina(bool siguiente)
     {
         animando = true;
+
         Animator animador = siguiente ? animadorSiguiente : animadorRegresar;
         string trigger = siguiente ? triggerSiguiente : triggerRegresar;
 
+        // ✅ Verificar que exista el animator antes de usarlo
         if (animador != null)
         {
             animador.gameObject.SetActive(true);
@@ -58,16 +56,15 @@ public class Book : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
 
+        // Cambiar página
         indicePagina += siguiente ? 1 : -1;
         ActualizarPaginas();
 
         if (animador != null)
         {
-
             yield return new WaitForSeconds(0.5f);
+            animador.gameObject.SetActive(false);
         }
-
-        animador.gameObject.SetActive(false);
 
         animando = false;
     }
@@ -75,16 +72,9 @@ public class Book : MonoBehaviour
     private void ActualizarPaginas()
     {
         if (paginasIzquierda.Length > 0 && indicePagina < paginasIzquierda.Length)
-        {
             paginaIzquierdaImage.sprite = paginasIzquierda[indicePagina];
-        }
 
         if (paginasDerecha.Length > 0 && indicePagina < paginasDerecha.Length)
-        {
             paginaDerechaImage.sprite = paginasDerecha[indicePagina];
-
-        }
     }
 }
-
-

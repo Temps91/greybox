@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameReset : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GameReset : MonoBehaviour
     public int[] resetsNecesarios;
 
     private int contadorResets = 0;
+    public EyeBlink eyeBlink;
 
     void Start()
     {
@@ -24,11 +26,17 @@ public class GameReset : MonoBehaviour
     void Update()
     {
         if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
-            ResetJuego();
+            StartCoroutine(ResetJuego());
     }
 
-    public void ResetJuego()
+    public IEnumerator ResetJuego()
     {
+
+        if (eyeBlink != null)
+        {
+            
+            yield return StartCoroutine(eyeBlink.Blink());
+        }
         contadorResets++;
         PlayerPrefs.SetInt("Resets", contadorResets);
 
