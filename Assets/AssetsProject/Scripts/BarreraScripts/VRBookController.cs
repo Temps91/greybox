@@ -16,17 +16,14 @@ public class VRBookController : MonoBehaviour
 
     void Update()
     {
-        // Verificar que los controladores sigan válidos
         if (!rightController.isValid || !leftController.isValid)
             GetControllers();
 
-        // Mano derecha -> Botón B
         if (rightController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool botonB) && botonB)
         {
             book.SiguientePagina();
         }
 
-        // Mano izquierda -> Botón Y
         if (leftController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool botonY) && botonY)
         {
             book.PaginaAnterior();
