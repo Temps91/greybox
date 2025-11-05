@@ -8,7 +8,10 @@ public class PlayerVision : MonoBehaviour
     public GameReset gameReset;
    
     public GameManager gameManager;
-    public int vida = 3;
+    public float vida = 10f;
+    public float vidaMaxima = 10f;
+    public float tiempoRegeneracion = 0f;
+    public float tiempoRegenerar = 10f;
 
     private void Update()
     {
@@ -23,8 +26,8 @@ public class PlayerVision : MonoBehaviour
             string nombreLayer = LayerMask.LayerToName(layerGolpeado);
             if (nombreLayer == "Enemie" && probabilidad >= 4.5f && probabilidad <= 5)
             {
-             
-                
+
+
             }
             if (nombreLayer == "Sight")
             {
@@ -35,6 +38,25 @@ public class PlayerVision : MonoBehaviour
                 }
             }
         }
+        if (vida < vidaMaxima)
+        {
+            tiempoRegeneracion += Time.deltaTime;
+
+            if (tiempoRegeneracion >= tiempoRegenerar)
+            {
+                vida += 1;
+                if (vida > vidaMaxima)
+                {
+                    vida = vidaMaxima;
+                    tiempoRegeneracion = 0f;
+                }
+            }
+        }
+        else
+        {
+            tiempoRegeneracion = 0f;
+        }
+
         
 
         

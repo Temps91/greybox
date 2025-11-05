@@ -3104,7 +3104,7 @@ GameObject:
   - component: {fileID: 163305710}
   - component: {fileID: 163305709}
   m_Layer: 0
-  m_Name: Book (1)
+  m_Name: BookGrimorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33692,6 +33692,7 @@ MonoBehaviour:
   fire: {fileID: 1872958468252968524}
   vfx: {fileID: 2686642676364782731}
   demonsManager: {fileID: 667057386}
+  gameReset: {fileID: 118165313}
 --- !u!1 &1782140495
 GameObject:
   m_ObjectHideFlags: 0
@@ -35019,9 +35020,12 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 0
-  gameReset: {fileID: 0}
+  gameReset: {fileID: 118165313}
   gameManager: {fileID: 1888287922}
   vida: 3
+  vidaMaxima: 10
+  tiempoRegeneracion: 0
+  tiempoRegenerar: 10
 --- !u!136 &1852488714
 CapsuleCollider:
   m_ObjectHideFlags: 0
