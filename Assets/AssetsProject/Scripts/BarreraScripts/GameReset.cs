@@ -21,6 +21,7 @@ public class GameReset : MonoBehaviour
     {
         contadorResets = PlayerPrefs.GetInt("Resets", 0);
         ActivarObjetosPorReset();
+        StartCoroutine(eyeBlink.Blink());
     }
 
     void Update()
@@ -38,8 +39,9 @@ public class GameReset : MonoBehaviour
             yield return StartCoroutine(eyeBlink.Blink());
         }
         contadorResets++;
+        playerPosInicial = player.position;
+        playerRotInicial = player.rotation;
         PlayerPrefs.SetInt("Resets", contadorResets);
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

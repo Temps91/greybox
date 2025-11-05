@@ -5,7 +5,7 @@ using System.Collections;
 public class EyeBlink : MonoBehaviour
 {
     public Image blackScreen;
-    public float blinkDuration = 0.2f; 
+    public float blinkDuration = 1f; 
 
     public IEnumerator Blink()
     {
