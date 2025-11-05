@@ -13,8 +13,14 @@ public class PlayerVision : MonoBehaviour
     public float tiempoRegeneracion = 0f;
     public float tiempoRegenerar = 10f;
 
+    public CanvasGroup dañoUI;
+
     private void Update()
     {
+        if (dañoUI.alpha > 0)
+        {
+            dañoUI.alpha -= Time.deltaTime;
+        }
         float probabilidad = gameManager.timer;
         Vector3 origin = transform.position;
         Vector3 direction = transform.forward;
@@ -75,6 +81,7 @@ public class PlayerVision : MonoBehaviour
     private void QuitarVida()
     {
         vida--;
+        dañoUI.alpha = 1;
         Debug.Log("Golpe recibido. Vida restante: " + vida);
 
         if (vida <= 0)
