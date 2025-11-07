@@ -1,27 +1,28 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerVision : MonoBehaviour
 {
+    [Header("Raycast")]
     public float rayDistance = 10f;
     public LayerMask layer;
-    public GameReset gameReset;
-   
+
+    [Header("Referencias")]
     public GameManager gameManager;
+
+    [Header("Vida")]
     public float vida = 10f;
     public float vidaMaxima = 10f;
     public float tiempoRegeneracion = 0f;
     public float tiempoRegenerar = 10f;
 
+    [Header("Daño UI")]
     public CanvasGroup dañoUI;
 
     private void Update()
     {
-        if (dañoUI.alpha > 0)
-        {
+        if (dañoUI != null && dañoUI.alpha > 0)
             dañoUI.alpha -= Time.deltaTime;
-        }
-        float probabilidad = gameManager.timer;
+
         Vector3 origin = transform.position;
         Vector3 direction = transform.forward;
         RaycastHit hit;
@@ -30,72 +31,64 @@ public class PlayerVision : MonoBehaviour
         {
             int layerGolpeado = hit.collider.gameObject.layer;
             string nombreLayer = LayerMask.LayerToName(layerGolpeado);
-            if (nombreLayer == "Enemie" && probabilidad >= 4.5f && probabilidad <= 5)
+
+            float probabilidad = gameManager != null ? gameManager.timer : 0f;
+
+            if (nombreLayer == "Enemy" && hit.collider.TryGetComponent<Criature>(out var enemy))
             {
-
-
+                enemy.InSight();
             }
-            if (nombreLayer == "Sight")
-            {
-                if (hit.collider.TryGetComponent<IVisible>(out var visibleObject))
-                {
-                    visibleObject.InSight();
 
-                }
+            if (nombreLayer == "Sight" && hit.collider.TryGetComponent<IVisible>(out var visibleObject))
+            {
+                visibleObject.InSight();
             }
         }
+
+        Debug.DrawRay(origin, direction * rayDistance, Color.red);
+
+        RegenerarVida();
+    }
+
+    private void RegenerarVida()
+    {
         if (vida < vidaMaxima)
         {
             tiempoRegeneracion += Time.deltaTime;
 
             if (tiempoRegeneracion >= tiempoRegenerar)
             {
-                vida += 1;
+                vida++;
+                tiempoRegeneracion = 0f;
+
                 if (vida > vidaMaxima)
-                {
                     vida = vidaMaxima;
-                    tiempoRegeneracion = 0f;
-                }
             }
         }
         else
         {
             tiempoRegeneracion = 0f;
         }
-
-        
-
-        
-        Debug.DrawLine(origin, direction, Color.red);
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-
-        if (collision.gameObject.CompareTag("Enemigo"))
-        {
-            QuitarVida();
-        }
-    }
-
-    private void QuitarVida()
+    public void QuitarVida()
     {
         vida--;
-        dañoUI.alpha = 1;
+        if (dañoUI != null)
+            dañoUI.alpha = 1;
+
         Debug.Log("Golpe recibido. Vida restante: " + vida);
 
         if (vida <= 0)
         {
-            gameReset.ResetJuego();
-
+            if (TryGetComponent<GameReset>(out var gameReset))
+                gameReset.ResetJuego();
         }
     }
-
 }
-
-
 
 public interface IVisible
 {
     void InSight();
 }
+
