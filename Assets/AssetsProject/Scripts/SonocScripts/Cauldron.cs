@@ -40,7 +40,7 @@ public class Cauldron : MonoBehaviour
                     else
                     {
                         Debug.Log("Ya hay un organo");
-                        gameReset.ResetJuego();
+                        gameReset.StartCoroutine(gameReset.ResetJuego());
                         //Reinicia Todo
                     }
                     break;
@@ -56,7 +56,7 @@ public class Cauldron : MonoBehaviour
                         else
                         {
                             Debug.Log("Ya no cabo");
-                            gameReset.ResetJuego();
+                            gameReset.StartCoroutine(gameReset.ResetJuego());
                             //Reinicia Todo
                         }
                         
@@ -77,9 +77,9 @@ public class Cauldron : MonoBehaviour
                     else
                     {
                        Debug.Log("Ya hay una vela");
-                         gameReset.ResetJuego();
+                       gameReset.StartCoroutine(gameReset.ResetJuego());
                             //Reinicia Todo
-                        }
+                    }
 
 
 

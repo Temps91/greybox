@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
         //Debug.Log("Tiempo es de: " + timer);
         if (sigilosEncontrados >= 3)
         {
-            gameReset.ResetJuego();
-
+            gameReset.StartCoroutine(gameReset.ResetJuego());
         }
     }
     public void Contador()
