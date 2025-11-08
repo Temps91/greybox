@@ -19,6 +19,7 @@ public class GameReset : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(contadorResets);
         contadorResets = PlayerPrefs.GetInt("Resets", 0);
         ActivarObjetosPorReset();
         StartCoroutine(eyeBlink.Blink());

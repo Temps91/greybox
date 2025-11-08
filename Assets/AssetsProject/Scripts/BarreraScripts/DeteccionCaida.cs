@@ -19,6 +19,7 @@ public class DeteccionCaida : MonoBehaviour
         if (collision.gameObject == player)
         {
             audioManagerDeteccionCaida.CaidaSound(transform.position);
+            
         }
        
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerVision : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerVision : MonoBehaviour
 
     [Header("Referencias")]
     public GameManager gameManager;
+    public GameReset gameReset;
 
     [Header("Vida")]
     public float vida = 10f;
@@ -17,6 +19,8 @@ public class PlayerVision : MonoBehaviour
 
     [Header("Daño UI")]
     public CanvasGroup dañoUI;
+
+    private InputAction pressU;
 
     private void Update()
     {
@@ -34,7 +38,7 @@ public class PlayerVision : MonoBehaviour
 
             float probabilidad = gameManager != null ? gameManager.timer : 0f;
 
-            if (nombreLayer == "Enemy" && hit.collider.TryGetComponent<Criature>(out var enemy))
+            if (nombreLayer == "Enemy" && hit.collider.TryGetComponent<IVisible>(out var enemy))
             {
                 enemy.InSight();
             }
@@ -46,6 +50,7 @@ public class PlayerVision : MonoBehaviour
         }
 
         Debug.DrawRay(origin, direction * rayDistance, Color.red);
+
 
         RegenerarVida();
     }
@@ -71,19 +76,33 @@ public class PlayerVision : MonoBehaviour
         }
     }
 
-    public void QuitarVida()
+    public void QuitarVida(int amount)
     {
-        vida--;
+        Debug.Log("me active quitar vida");
+        vida -= amount;
         if (dañoUI != null)
             dañoUI.alpha = 1;
 
         Debug.Log("Golpe recibido. Vida restante: " + vida);
-
         if (vida <= 0)
         {
-            if (TryGetComponent<GameReset>(out var gameReset))
-                gameReset.ResetJuego();
+            Debug.Log("Vida es menor a 0 o es 0 ");
+            gameReset.StartCoroutine(gameReset.ResetJuego());
+            Debug.Log("reseteando juego");
         }
+
+    }
+
+    void OnEnable()
+    {
+        pressU = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/u");
+        pressU.performed += ctx => QuitarVida(20);
+        pressU.Enable();
+    }
+
+    void OnDisable()
+    {
+        pressU.Disable();
     }
 }
 

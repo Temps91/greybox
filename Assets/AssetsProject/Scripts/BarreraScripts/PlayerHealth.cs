@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private PlayerVision playerVision;
+
+    private void Start()
     {
-        
+        playerVision = GetComponent<PlayerVision>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Enemigo"))
+        {
+            Debug.Log("toque al player bicho");
+            other.gameObject.SetActive(false);
+            playerVision.QuitarVida(1);
+        }
     }
 }
