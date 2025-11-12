@@ -12,20 +12,20 @@ public class PlayerVision : MonoBehaviour
     public GameReset gameReset;
 
     [Header("Vida")]
-    public float vida = 10f;
-    public float vidaMaxima = 10f;
+    public float vida = 5f;
+    public float vidaMaxima = 5f;
     public float tiempoRegeneracion = 0f;
     public float tiempoRegenerar = 10f;
 
     [Header("Daño UI")]
     public CanvasGroup dañoUI;
-
+    public float animationDamageTime = 0.5f;
     private InputAction pressU;
 
     private void Update()
     {
         if (dañoUI != null && dañoUI.alpha > 0)
-            dañoUI.alpha -= Time.deltaTime;
+            dañoUI.alpha -= Time.deltaTime * animationDamageTime;
 
         Vector3 origin = transform.position;
         Vector3 direction = transform.forward;

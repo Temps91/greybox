@@ -7,6 +7,7 @@ public class Demons
     public string demonName;
     public List<Item> itemsToSummon;
     public GameObject[] objectsToActivate;
+    public Color fogColor;
 
     public int collectedItems = 0;
 
@@ -20,6 +21,7 @@ public class Demons
             if (collectedItems >= 6)
             {
                 Debug.Log($"¡Demon {demonName} ha sido activado!");
+                RenderSettings.fogColor = fogColor;
                 return true;
             }
         }
