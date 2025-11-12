@@ -86,6 +86,8 @@ public class Cauldron : MonoBehaviour
                 }
                 break;
             }
+            
+            otherItem.gameObject.SetActive(false);
         }
     }
 }
