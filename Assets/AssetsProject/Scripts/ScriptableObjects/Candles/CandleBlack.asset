@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 677881f865b98464e80a18417c67c044, type: 3}
   m_Name: CandleBlack
   m_EditorClassIdentifier: Assembly-CSharp::Candle
-  typeItem: 0
+  typeItem: 2
   targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}

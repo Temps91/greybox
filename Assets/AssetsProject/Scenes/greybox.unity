@@ -12848,6 +12848,12 @@ MonoBehaviour:
     objectsToActivate: []
     fogColor: {r: 0.039215688, g: 0.13333334, b: 0.22352941, a: 1}
     collectedItems: 0
+  enemyGenericItems:
+  - {fileID: 1371854879}
+  - {fileID: 649238886}
+  - {fileID: 2069425580}
+  - {fileID: 1130679094}
+  - {fileID: 486851757}
 --- !u!1 &668468605
 GameObject:
   m_ObjectHideFlags: 0
@@ -31864,7 +31870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1614127998
 MonoBehaviour:
   m_ObjectHideFlags: 0
