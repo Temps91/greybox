@@ -13287,11 +13287,15 @@ MonoBehaviour:
   paginaIzquierdaImage: {fileID: 725853593}
   paginaDerechaImage: {fileID: 1101330536}
   paginasIzquierda:
-  - {fileID: 21300000, guid: 4ab25e7c21e0ccf4c8fe3ff552f2df64, type: 3}
-  - {fileID: 21300000, guid: 38517963295704d4c983266ba6f62abd, type: 3}
+  - {fileID: 21300000, guid: 7c7172ae4537e1847bc8133b56f2eb98, type: 3}
+  - {fileID: 21300000, guid: 578a06c072377164787f883708487eaf, type: 3}
+  - {fileID: 21300000, guid: 293b1036d2791f34b809723ccb6b039f, type: 3}
+  - {fileID: 21300000, guid: 0098dd0e2e9fcd547a3aa19aa3de6eb5, type: 3}
   paginasDerecha:
-  - {fileID: 21300000, guid: 13eff5521861d9c498648c38941bedda, type: 3}
-  - {fileID: 21300000, guid: 43c1765a7cccb65419c687734743af7e, type: 3}
+  - {fileID: 21300000, guid: e7ea830b11991274aa7e37423a4c8ee2, type: 3}
+  - {fileID: 21300000, guid: 3383413060afd8c43969e4885b7380d4, type: 3}
+  - {fileID: 21300000, guid: d79ca4894c10c7a4c924f2c908118275, type: 3}
+  - {fileID: 21300000, guid: c2c28ba9e3f744a42abf570569ecaf62, type: 3}
   animadorSiguiente: {fileID: 1172374583}
   animadorRegresar: {fileID: 1933080794}
   triggerSiguiente: PasarPagina
@@ -36016,7 +36020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 39.481
+      value: 22.8
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.y
@@ -36024,7 +36028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.127
+      value: -1.56
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37126,7 +37130,7 @@ Transform:
   m_GameObject: {fileID: 1817946740}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.328, y: 1.332, z: 4.025}
+  m_LocalPosition: {x: 22.328, y: 1.332, z: 5.841}
   m_LocalScale: {x: 0.38128, y: 0.38128, z: 0.38128}
   m_ConstrainProportionsScale: 0
   m_Children:
