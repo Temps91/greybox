@@ -48,15 +48,14 @@ public class Book : MonoBehaviour
         Animator animador = siguiente ? animadorSiguiente : animadorRegresar;
         string trigger = siguiente ? triggerSiguiente : triggerRegresar;
 
-        // ✅ Verificar que exista el animator antes de usarlo
+
         if (animador != null)
         {
             animador.gameObject.SetActive(true);
             animador.SetTrigger(trigger);
             yield return new WaitForSeconds(0.5f);
         }
-
-        // Cambiar página
+        
         indicePagina += siguiente ? 1 : -1;
         ActualizarPaginas();
 
