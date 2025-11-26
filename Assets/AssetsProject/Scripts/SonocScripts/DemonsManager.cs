@@ -9,6 +9,7 @@ public class DemonsManager : MonoBehaviour
     private void Start()
     {
         DesactivateAllEnemyItems();
+        DesactivateAllObjects();
     }
 
     public void CheckItem(Item pickedItem)
@@ -38,6 +39,17 @@ public class DemonsManager : MonoBehaviour
         for(int i = 0; i < enemyGenericItems.Length; i++)
         {
             enemyGenericItems[i].SetActive(false);
+        }
+    }
+
+    public void DesactivateAllObjects()
+    {
+        foreach (var demon in allDemons)
+        {
+            for (int i = 0; i < demon.objectsToActivate.Length; i++)
+            {
+                demon.objectsToActivate[i].SetActive(false);
+            }
         }
     }
 }
