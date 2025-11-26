@@ -36,13 +36,5 @@ public class Demons
         }
     }
 
-    public void DesactivateAllObjects()
-    {
-        for (int i = 0; i < objectsToActivate.Length; i++)
-        {
-            objectsToActivate[i].SetActive(false);
-        }
-    }
-
 
 }
