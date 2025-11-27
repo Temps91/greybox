@@ -24,8 +24,8 @@ public class PlayerVision : MonoBehaviour
 
     private void Update()
     {
-        if (dañoUI != null && dañoUI.alpha > 0)
-            dañoUI.alpha -= Time.deltaTime * animationDamageTime;
+        //if (dañoUI != null && dañoUI.alpha > 0)
+            //dañoUI.alpha -= Time.deltaTime * animationDamageTime;
 
         Vector3 origin = transform.position;
         Vector3 direction = transform.forward;
@@ -64,7 +64,9 @@ public class PlayerVision : MonoBehaviour
             if (tiempoRegeneracion >= tiempoRegenerar)
             {
                 vida++;
+                
                 tiempoRegeneracion = 0f;
+                dañoUI.alpha -= 0.2f;
 
                 if (vida > vidaMaxima)
                     vida = vidaMaxima;
@@ -81,7 +83,7 @@ public class PlayerVision : MonoBehaviour
         Debug.Log("me active quitar vida");
         vida -= amount;
         if (dañoUI != null)
-            dañoUI.alpha = 1;
+            dañoUI.alpha += 0.2f;
 
         Debug.Log("Golpe recibido. Vida restante: " + vida);
         if (vida <= 0)
