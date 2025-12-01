@@ -7,7 +7,10 @@ public class SustosInofensivos : MonoBehaviour
         Inofensivo,
         Susto,
         Dialogo,
-        Ambiente
+        Ambiente,
+        EnterRitual,
+        WOL,
+        EnterHouse
     }
 
     [Header("Zona de sonido")]
@@ -35,7 +38,15 @@ public class SustosInofensivos : MonoBehaviour
                 case TipoDeSonido.Susto:
                     AudioManager.Instance.PlaySusto(posicion);
                     break;
-
+                case TipoDeSonido.EnterRitual:
+                    AudioManager.Instance.PlayEnterRitual(posicion);
+                    break;
+                case TipoDeSonido.WOL:
+                    AudioManager.Instance.PlayWOL(posicion);
+                    break;
+                case TipoDeSonido.EnterHouse:
+                    AudioManager.Instance.PlayEnterHouse(posicion);
+                    break;
                 case TipoDeSonido.Dialogo:
                     AudioManager.Instance.PlayDialogo(indexDialogo);
                     break;

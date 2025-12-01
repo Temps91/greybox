@@ -2,7 +2,7 @@
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance; 
+    public static AudioManager Instance;
 
     [Header("Sonidos individuales")]
     public AudioClip caida;
@@ -13,9 +13,14 @@ public class AudioManager : MonoBehaviour
     public AudioClip[] sonidosDeSusto;
     public AudioClip[] dialogos;
     public AudioClip[] ambientes;
+    public AudioClip[] enterRitual;
+    public AudioClip[] wOL;
+    public AudioClip[] readBook;
+    public AudioClip[] enterHouse;
 
-    private AudioSource ambienteSource; 
-    private AudioSource dialogoSource;  
+    private AudioSource ambienteSource;
+    private AudioSource dialogoSource;
+    private AudioSource audioBook;
 
     private void Awake()
     {
@@ -68,6 +73,46 @@ public class AudioManager : MonoBehaviour
         {
             AudioClip clip = sonidosDeSusto[Random.Range(0, sonidosDeSusto.Length)];
             AudioSource.PlayClipAtPoint(clip, posicion);
+            Debug.Log("Reproduciendo Sonido");
+        }
+    }
+    public void PlayEnterRitual(Vector3 posicion)
+    {
+        if (enterRitual.Length > 0)
+        {
+            AudioClip clip = enterRitual[Random.Range(0, enterRitual.Length)];
+            AudioSource.PlayClipAtPoint(clip, posicion);
+            Debug.Log("Reproduciendo Sonido");
+        }
+    }
+
+    public void PlayWOL(Vector3 posicion)
+    {
+        if (wOL.Length > 0)
+        {
+            AudioClip clip = wOL[Random.Range(0, wOL.Length)];
+            AudioSource.PlayClipAtPoint(clip, posicion);
+            Debug.Log("Reproduciendo Sonido");
+        }
+    }
+
+    public void PlayEnterHouse(Vector3 posicion)
+    {
+        if (enterHouse.Length > 0)
+        {
+            AudioClip clip = enterHouse[Random.Range(0, enterHouse.Length)];
+            AudioSource.PlayClipAtPoint(clip, posicion);
+            Debug.Log("Reproduciendo Sonido");
+        }
+    }
+
+    public void PlayReadBook(Vector3 posicion)
+    {
+        if (readBook.Length > 0)
+        {
+            AudioClip clip = readBook[Random.Range(0, readBook.Length)];
+            audioBook.PlayOneShot(clip);
+            Debug.Log("Reproduciendo Sonido");
         }
     }
 
