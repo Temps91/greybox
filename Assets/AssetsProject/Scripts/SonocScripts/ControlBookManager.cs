@@ -9,7 +9,7 @@ public class ControlBookManager : MonoBehaviour
     public InputActionProperty GrabBook;
     public bool bookInHand = false;
     private XRGrabInteractable _grabInteractable;
-    public Vector3 playerInteraccionVoice;
+
     void Start()
     {
         _grabInteractable = GetComponent<XRGrabInteractable>();
@@ -46,7 +46,7 @@ public class ControlBookManager : MonoBehaviour
         if (grab && !bookInHand)
         {
             TryToGrabBook(_leftInteractor);
-            AudioManager.Instance.PlayReadBook(playerInteraccionVoice);
+            AudioManager.Instance.PlayReadBook();
         }
         else if (grab && bookInHand)
         {

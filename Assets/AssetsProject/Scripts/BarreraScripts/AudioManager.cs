@@ -25,6 +25,7 @@ public class AudioManager : MonoBehaviour
     private AudioSource dialogoSource;
     private AudioSource audioBook;
     private AudioSource demons;
+    private AudioSource audio2D;
 
     private void Awake()
     {
@@ -45,6 +46,10 @@ public class AudioManager : MonoBehaviour
         ambienteSource.loop = true;
 
         dialogoSource = gameObject.AddComponent<AudioSource>();
+
+        audio2D = gameObject.AddComponent<AudioSource>();
+        audio2D.spatialBlend = 0;
+
     }
 
     public void CaidaSound(Vector3 posicion)
@@ -80,42 +85,42 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Reproduciendo Sonido");
         }
     }
-    public void PlayEnterRitual(Vector3 posicion)
+    public void PlayEnterRitual()
     {
         if (enterRitual.Length > 0)
         {
             AudioClip clip = enterRitual[Random.Range(0, enterRitual.Length)];
-            AudioSource.PlayClipAtPoint(clip, posicion);
+            audio2D.PlayOneShot(clip);
             Debug.Log("Reproduciendo Sonido");
         }
     }
 
-    public void PlayWOL(Vector3 posicion)
+    public void PlayWOL()
     {
         if (wOL.Length > 0)
         {
             AudioClip clip = wOL[Random.Range(0, wOL.Length)];
-            AudioSource.PlayClipAtPoint(clip, posicion);
+            audio2D.PlayOneShot(clip);
             Debug.Log("Reproduciendo Sonido");
         }
     }
 
-    public void PlayEnterHouse(Vector3 posicion)
+    public void PlayEnterHouse()
     {
         if (enterHouse.Length > 0)
         {
             AudioClip clip = enterHouse[Random.Range(0, enterHouse.Length)];
-            AudioSource.PlayClipAtPoint(clip, posicion);
+            audio2D.PlayOneShot(clip);
             Debug.Log("Reproduciendo Sonido");
         }
     }
 
-    public void PlayReadBook(Vector3 posicion)
+    public void PlayReadBook()
     {
         if (readBook.Length > 0)
         {
             AudioClip clip = readBook[Random.Range(0, readBook.Length)];
-            audioBook.PlayOneShot(clip);
+            audio2D.PlayOneShot(clip);
             Debug.Log("Reproduciendo Sonido");
         }
     }

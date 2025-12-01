@@ -39,13 +39,13 @@ public class SustosInofensivos : MonoBehaviour
                     AudioManager.Instance.PlaySusto(posicion);
                     break;
                 case TipoDeSonido.EnterRitual:
-                    AudioManager.Instance.PlayEnterRitual(posicion);
+                    AudioManager.Instance.PlayEnterRitual();
                     break;
                 case TipoDeSonido.WOL:
-                    AudioManager.Instance.PlayWOL(posicion);
+                    AudioManager.Instance.PlayWOL();
                     break;
                 case TipoDeSonido.EnterHouse:
-                    AudioManager.Instance.PlayEnterHouse(posicion);
+                    AudioManager.Instance.PlayEnterHouse();
                     break;
                 case TipoDeSonido.Dialogo:
                     AudioManager.Instance.PlayDialogo(indexDialogo);

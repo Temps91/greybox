@@ -25,7 +25,6 @@ public class Cauldron : MonoBehaviour
     {
         if(other.TryGetComponent<TriggerItems>(out var otherItem))
         {
-            vfx.Play();
 
             switch (otherItem.thisItem.typeItem)
             {
@@ -36,6 +35,8 @@ public class Cauldron : MonoBehaviour
                         organs.Enqueue(otherItem.thisItem);
 
                         demonsManager.CheckItem(otherItem.thisItem);
+                        vfx.gameObject.SetActive(false);
+                        vfx.gameObject.SetActive(true);
                     }
                     else
                     {
@@ -52,6 +53,8 @@ public class Cauldron : MonoBehaviour
                             genericObjects.Enqueue(otherItem.thisItem);
 
                             demonsManager.CheckItem(otherItem.thisItem);
+                            vfx.gameObject.SetActive(false);
+                            vfx.gameObject.SetActive(true);
                         }
                         else
                         {
@@ -73,7 +76,9 @@ public class Cauldron : MonoBehaviour
                         mainProperties.startColor = newCandleColor;
                         candles.Enqueue(otherItem.thisItem);
                         demonsManager.CheckItem(otherItem.thisItem);
-                    }
+                            vfx.gameObject.SetActive(false);
+                            vfx.gameObject.SetActive(true);
+                        }
                     else
                     {
                        Debug.Log("Ya hay una vela");
