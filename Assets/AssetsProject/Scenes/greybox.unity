@@ -79579,6 +79579,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1cbcc950b06fc914889ee078da61f007, type: 3}
   - {fileID: 8300000, guid: 19c1cee5a02a7d9498e0f0dc617b38a2, type: 3}
   - {fileID: 8300000, guid: 8de86e3f22df03e45ac6eba5643627e8, type: 3}
+  belzebubSong: {fileID: 8300000, guid: aa63b8ba658faca4c8a862354dee245a, type: 3}
+  stolasSong: {fileID: 8300000, guid: 8794e6388ff020a4fb0c2e6094ed7651, type: 3}
+  leviatanSong: {fileID: 8300000, guid: 993ba99ee3f69c14aabaeafc33b43300, type: 3}
 --- !u!4 &1423424084
 Transform:
   m_ObjectHideFlags: 0

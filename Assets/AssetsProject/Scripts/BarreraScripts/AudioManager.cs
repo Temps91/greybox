@@ -17,10 +17,14 @@ public class AudioManager : MonoBehaviour
     public AudioClip[] wOL;
     public AudioClip[] readBook;
     public AudioClip[] enterHouse;
+    public AudioClip belzebubSong;
+    public AudioClip stolasSong;
+    public AudioClip leviatanSong;
 
     private AudioSource ambienteSource;
     private AudioSource dialogoSource;
     private AudioSource audioBook;
+    private AudioSource demons;
 
     private void Awake()
     {
@@ -28,7 +32,7 @@ public class AudioManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -133,5 +137,19 @@ public class AudioManager : MonoBehaviour
             ambienteSource.clip = ambientes[index];
             ambienteSource.Play();
         }
+    }
+
+    public void BelzebubAudio()
+    {
+        demons.PlayOneShot(belzebubSong);
+    }
+
+    public void StolasAudio()
+    {
+        demons.PlayOneShot(stolasSong);
+    }
+    public void LeviatanAudio()
+    {
+        demons.PlayOneShot(leviatanSong);
     }
 }
